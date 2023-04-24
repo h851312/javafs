@@ -60,12 +60,19 @@
     <b id="contact">CONTACT</b>
     <h2>WHERE I WORK</h2>
     <p>I'd love your feedback</p>
+    <img src="images/map.jpg" alt="map">
     <address>
         경기도 안양시<br>
         Phone: +82 10-1234-1234<br>
         Email: h851312@gmail.com
     </address>
     <p>Swing by for a cup of, or leave me a note:</p>
+    <form action="message.php" method="post">
+        <input type="text" name="user_name" placeholder="NAME">
+        <input type="email" name="user_email" placeholder="이메일을 입력하세요">
+        <input type="text" name="user_massage" placeholder="메시지를 간단하게 기록하세요">
+        <button type="submit" <i class="fa-solid fa-paper-plane"></i>SEND MESSGE</button>   
+    </form>
 
     <!-- 푸터 -->
     <a href="#top"><i class="fa-solid fa-arrow-up">to the top</i></a>
