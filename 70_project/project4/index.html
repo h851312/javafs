@@ -7,54 +7,60 @@
     <title>JUST 쇼핑몰</title>
 </head>
 <body>
-    <div>
+    <div id="wrap">
+        <!-- header -->
         <header>
-            <h1>
-                <img src="/50_html/assets/images/logo.png" alt="로고">
-            </h1>
+            <h1><a href="#">로고</a></h1>
             <nav>
-                <ul>
-                    <li>탑
-                        <ul>
-                            <li>블라우스</li>
-                            <li>티</li>
-                            <li>셔츠</li>
-                            <li>니트</li>
+                <!-- ul.main>li*4>a{메뉴$}+ul.sub>li*4>a{서브$} -->
+                <ul class="main">
+                    <li>
+                        <a href="#">메뉴1</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
                         </ul>
                     </li>
-                    <li>아우터
-                        <ul>
-                            <li>자켓</li>
-                            <li>코트</li>
-                            <li>가디건</li>
-                            <li>머플러</li>
+                    <li>
+                        <a href="#">메뉴2</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
                         </ul>
                     </li>
-                    <li>팬츠
-                        <ul>
-                            <li>청바지</li>
-                            <li>짧은바지</li>
-                            <li>긴바지</li>
-                            <li>레깅스</li>
+                    <li>
+                        <a href="#">메뉴3</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
                         </ul>
                     </li>
-                    <li>악세사리
-                        <ul>
-                            <li>귀고리</li>
-                            <li>목걸이</li>
-                            <li>반지</li>
-                            <li>팔찌</li>
+                    <li>
+                        <a href="#">메뉴4</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </header>
+        <!-- slide -->
         <div>
             <img src="/50_html/assets/images/m1.jpg" alt="이미지슬라이드">
             <img src="/50_html/assets/images/m2.jpg" alt="이미지슬라이드1">
             <img src="/50_html/assets/images/m3.jpg" alt="이미지슬라이드2">
         </div>
-        
+        <!-- //slide -->
+        <!-- mail cintents -->
     <div>
             <div>공지사항/갤러리
                 <table id="table1">
@@ -79,18 +85,20 @@
             </div>
             <div>
                 <ul>
-                    <li><img src="/50_html/assets/images/banner.jpg" alt="배너"></li>
+                    <li><a href="/50_html/assets/images/banner.jpg"></a></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li><img src="/50_html/assets/images/quick.jpg" alt="바로가기"></li>
+                    <li><a href="/50_html/assets/images/quick.jpg"></a></li>
                 </ul>
             </div>
         </div>
+        <!-- mail contents -->
+        <!-- footer -->
         <footer>
             <div>
-                <img src="/50_html/assets/images/logo2.png" alt="하단로고">
+                <a href="#"><img src="/50_html/assets/images/logo2.png" alt="로고2"></a>
             </div>
             <div>
                 <address>
