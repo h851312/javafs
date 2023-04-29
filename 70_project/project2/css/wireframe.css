@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+#wrap{
+    width: 1500px;
+    margin: 0 auto;
+    list-style: none;
+}
+
 
 header {
     background-color: lightblue;
@@ -18,4 +24,32 @@ nav{
     width: 1500px;
     height: 800px;
     background-color: lightpink;
+}
+/* 섹션2 */
+.brand * li {
+    float: left;
+    width: 365px;
+    height: 240px;
+    background-color: lightcoral;
+    margin-right: 0px;
+    margin-bottom: 13px;
+    overflow: hidden;
+    list-style: none;
+}
+#brand * li:not(:nth-of-type(4n)) {
+    margin-right: 13.3px;
+}
+
+#ad * li {
+    float: left;
+    width: 365px;
+    height: 240px;
+    background-color: blue;
+    margin-right: 0px;
+    margin-bottom: 13px;
+    overflow: hidden;
+    list-style: none;
+}
+#ad * li:not(:nth-of-type(4n)) {
+    margin-right: 13px;
 }
