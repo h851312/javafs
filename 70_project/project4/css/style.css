@@ -5,19 +5,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-header::after, #contents::after, footer::after{
+/* float를 위해서 존재
+    header::after, #contents::after, footer::after{
     content:'';
     clear: both;
     display: block;
-}
+} */
 /* 전체 */
 #wrap{
     /* 가로 가운데 맞춤 */
     width: 1200px;
     margin: 0 auto;
 }
-.logo, nav, #contents div, footer div {
-    float:left;
+header, #contents, footer {
+    /* float:left; */
+    display:flex;
+
 }
 
 /* 헤더 */
