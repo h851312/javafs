@@ -7,8 +7,12 @@
     box-sizing: border-box;
     border: solid #000000
 }
+html {
+    font-size: 10px;
+}
 
 body {
+    font: 1.5rem/1.8 'noto sans KR', sans-serif;
     color: #000;
     background: #fff;
     border: 1px;
@@ -129,7 +133,7 @@ section {
 } */
 #event li h3 {
     margin: 16px 0 8px;;
-/* } */
+}
 
 #event li p {
         margin: 8px 0;
