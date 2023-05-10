@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            크기: 390*5880
+            프레임수: 35
+            1프레임의 크기: 390*5880
+        */
+        div {
+            width: 390px;
+            height: 168px;
+            overflow:hidden;
+            background: url(../assets/honey.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            text-indent: -99999em;
+        }
+        /* infinite이면 forwards는 동작하지 않는다. */
+        .anim {
+            /* animation-name: move;
+            animation-duration: 2s;
+            animation-timing-function: steps(34);
+            animation-fill-mode: forwards; */
+
+            animation: txt 2s steps(34) forwards;
+        }
+
+
+        @keyframes txt {
+            0% {background-position: 0 0;}
+            100% {background-position: 0 -5712px;}
+        }
+
+        /* @keyframes move {
+            from {left:0;}
+            to {left:200px;}    
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>애니메이션</h1>
+    <div class="anim">스프라이트 이미지</div>
+    <!-- 
+        스프라이트(sprite) 이미지
+        1. 애니메이션
+        2. 버튼
+     -->
+</body>
+
+</html>
