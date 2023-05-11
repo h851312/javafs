@@ -15,7 +15,7 @@
         <h1 class="logo"><img src="./images/nav_logo.png" alt="logo"> </h1>
         <h2>본아이에프</h2>
         <nav>
-            <ul class="container nav1">
+            <ul class="container">
                 <li><a href="#brand">브랜드</a></li>
                 <li><a href="#new">새 메뉴</a></li>
                 <li><a href="#startup">창업문의</a></li>
@@ -115,38 +115,23 @@
             <input type="text" name="user_name" placeholder="Name">
             <input type="email" name="user_email" placeholder="Email">
             <input type="tel" name="user_tel" placeholder="Phone">
-            <input type="text" list="place" name="place">
-            <select name="place" id="">
-                <optgroup label="원하는 위치">
+            <select name="place" id="place">
                     <option value="seoul">서울특별시</option>
-                    <option value="css">경기도</option>
-                    <option value="javascript">강원도</option>
-                    <option value="jquery">충청북도</option>
-                    <option value="vue">충청남도</option>
-                    <option value="react">전라북도</option>
-                    <option value="typescipt">전라남도</option>
-                </optgroup>
-                <optgroup label="백엔드">
-                    <option value="java">Java</option>
-                    <option value="mysql">MySQL</option>
+                    <option value="gyeong-gi">경기도</option>
+                    <option value="incheon">인천</option>
+                    <option value="gang-wondo">강원도</option>
+                    <option value="chungcheongbugdo">충청북도</option>
+                    <option value="chungcheongnamdo">충청남도</option>
+                    <option value="jeonlabugdo">전라북도</option>
+                    <option value="jeonlanamdo">전라남도</option>
+                    <option value="gyeongsangbugdo">경상북도</option>
+                    <option value="mgyeongsangnamdo">경상남도</option>
+                    <option value="jejudo">제주도</option>
                 </optgroup>
             </select>
-            <fieldset>
-                <div>
-                    <label for="chk">개인정보수집 및 이용동의</label>
-                </div>
 
-                <div>
-                    <!-- 글상자 -->
-                    <!-- readonly: 읽기전용 -->
-                    <!-- cols: 열칸 수 -->
-                    <!-- rows: 행 수 -->
-                    <textarea name="" id="" cols="40" rows="50" readonly>본아이에프는 창업상담 신청 서비스 제공을 위해 다음과 같이 개인정보를 활용합니다.
-                       
-                    </textarea>
-                    <input type="checkbox" id="chk" checked required>
-                </div>
-            </fieldset>
+
+
             <button type="submit">SEND MESSAGE</button>
         </form>
 
