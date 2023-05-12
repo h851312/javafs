@@ -1,24 +1,22 @@
 @charset "utf-8";
+
 /* 초기화 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* float를 위해서 존재
-    header::after, #contents::after, footer::after{
-    content:'';
-    clear: both;
-    display: block;
-} */
+
 /* 전체 */
+
+img {
+    width: 100%;
+}
 #wrap{
-    /* 가로 가운데 맞춤 */
     width: 1200px;
     margin: 0 auto;
 }
 header, #contents, footer {
-    /* float:left; */
     display:flex;
 
 }
@@ -33,6 +31,7 @@ header{
     width: 200px;
     height: 100px;
     background-color: lightpink;
+    
 }
 
 /* 내비게이션 */
@@ -46,7 +45,24 @@ nav {
 #slide {
     height: 300px;
     background-color: lightcoral;
-
+    overflow: hidden;
+}
+#slide ul {
+    position: relative;
+    left: 0;
+    display: flex;
+    width: 400%;
+    animation: slide 9s infinite;
+}
+@keyframes slide {
+    0% {left:0;}
+    5% {left:-100%;}
+    33% {left:-100%;}
+    38% {left:-200%;}
+    66% {left:-200%;}
+    71% {left:-300%;}
+    99.99999% {left:-300%;}
+    100% {left:0}
 }
 /* 메인콘텐츠 */
 #contents {

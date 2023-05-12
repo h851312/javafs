@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* float를 위해서 존재
+    header::after, #contents::after, footer::after{
+    content:'';
+    clear: both;
+    display: block;
+} */
+/* 전체 */
+#wrap{
+    /* 가로 가운데 맞춤 */
+    width: 1200px;
+    margin: 0 auto;
+}
+header, #contents, footer {
+    /* float:left; */
+    display:flex;
+
+}
+
+/* 헤더 */
+header{
+   
+    background: lightblue;
+}
+/* 로고 */
+.logo {
+    width: 200px;
+    height: 100px;
+    background-color: lightpink;
+}
+
+/* 내비게이션 */
+nav {
+    width: 1000px;
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+/* 슬라이드 */
+#slide {
+    height: 300px;
+    background-color: lightcoral;
+
+}
+/* 메인콘텐츠 */
+#contents {
+
+    background-color: lightcyan;
+}
+#contents div {
+    width: 400px;
+    height: 200px;
+}
+.tabs {
+    background-color: gold;
+}
+.banner {
+    background-color: lavender;
+}
+.shortcut {
+    background-color: greenyellow;
+}
+/* 푸터 */
+
+.b_logo {
+    width: 200px;
+    height: 100px;
+    background-color: firebrick;
+}
+
+.addr {
+    width: 800px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.sns {
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
