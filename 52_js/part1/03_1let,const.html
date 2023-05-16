@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>변수</h1>
+    <h1>변수(let,const)</h1>
     <script>
         /* 
             변수(Variables)
@@ -23,16 +23,25 @@
             // 값을 할당
             변수명 = 값;
 
-            // 재선언 : var, let, const
-            // 재할당 : var, let
+            // 변수 선언 및 할당
+            var 변수명 = 값;
 
-            변수명 작성 규칙
+            var 변수명1 = 값1;
+            var 변수명2 = 값2;
+            var 변수명3 = 값3;
+            var 변수명1 = 값1, 변수명2 =값2, 변수명3 = 값3;
+
+
+            
+            //const는 선언 동시에 할당도 해야 한다.
+            
+            //변수명 작성 규칙
             1. 첫 글자는 영문자(AZ 또는 az), 밑줄(_), 달러 기호($)로 시작한다.
             2. 후속 문자는 영문자, 밑줄, 달러 기호, 숫자로 지정할 수 있다.
             3. 대소문자를 구분한다.
             4. 일반적으로 소문자로 지정하고, 두 단어 이상의 경우 소문자로 시작하는 Lower Camel Case(카멜 케이스)를 사용한다. (예, firstName, lastName)
             5. 예약어는 식별자로 사용할 수 없다.
-
+            
             var $aaa (o)
             var _aaa (o)
             var -aaa (x)
@@ -42,21 +51,49 @@
             var true (x)
             var if (x)
             ture와 if는 예약어이다.
-
+            
             자바스크립트 예약어: https://www.w3schools.com/js/js_reserved.asp 
-        */
-       // 변수 선언
-       // box를 변수로 사용할 것을 선언합니다.
-       // 변수 선언 후 값을 할당하지 않으면 undefined
-        var box;
+            */
+        // 변수 선언
+        // box를 변수로 사용할 것을 선언합니다.
+        // 변수 선언 후 값을 할당하지 않으면 undefined
         // 변수에 값을 할당
         // A = a -> a를 A에 할당하다.
         // A == a -> A와 a가 같다.
-  
-        box = 100;
-        
-        document.write(box, '<br>');
+
+        // 선언과 할당을 따로 살수 있는것은? var, let
+        // 재선언 : var, const
+        // 재할당 : var, let, const
+
+        // let는 재선언을 할 수 없다. 
+        //const는 재 선언과 재할당을 할 수 없다.
+
+        //const는 선언 동시에 할당도 해야한다.
+        var a;
+        a = 5;
+        var a = 10;
+        var a = 30;
+
+        let b;
+        //let은 재할당 된다 -> 값이 바뀌는 변수는 let을 쓴다.
+        b = 10;
+        b = 20;
+        b = 40;
+        //let은 재선언 할 수 없다.
+        //let b =30;
+
+        const c = 10;
+         //const는 선언 동시에 할당도 해야한다.
+        // const = c;
+        // c = 10;
+        //const는 재선언 및 재할당도 할수 없다. ->값이 바뀌지 않는 변수는 const를 쓴다.
+
+        document.write(a, '<br>');
+        document.write(b, '<br>');
+        document.write(c, '<br>');
         document.write('box', '<br>');
+
+
     </script>
 </body>
 
