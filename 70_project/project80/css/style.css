@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
-    font-family: Noto Sans KR;
+    font-family: 'Noto Sans KR';
     src: url(../font/NotoSansKR-Regular.otf);
 }
+
 
 * {
     margin: 0;
@@ -21,7 +22,9 @@ html {
 
 body {
     background: #fff;
-    font-size: 1.5rem/1.8 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
     color: #333;
 }
 
@@ -32,11 +35,11 @@ a {
 }
 
 li a {
-    font-style: 2rem;
+    font-size: 2rem;
 }
 
 p {
-    font-style: 1.5rem;
+    font-size: 1.5rem;
 }
 
 /* 목록의 마커 제거 */
@@ -44,9 +47,10 @@ li {
     list-style: none;
 }
 
+
 img {
     width: 100%;
-    /* vertical-align:top; */
+    vertical-align: top;
 }
 
 iframe {
@@ -56,13 +60,13 @@ iframe {
 }
 
 .logo {
-    font-style: 1.5rem;
+    font-size: 1.5rem;
     font-weight: normal;
     letter-spacing: 4px;
 }
 
 h1 a {
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -82,14 +86,20 @@ header {
     z-index: 9999;
     position: fixed;
     width: 100%;
-    padding: 0 32px;
+    padding: 0px 32px;
     background: #7DAF1C;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+    align-items: center;
+}
+
+h1 a {
+    align-items: center;
 }
 
 header img {
     display: none;
 }
+
 
 nav {
     display: none;
@@ -100,6 +110,7 @@ nav {
     position: relative;
 }
 
+/* 로고 위치 */
 #main_img h2 {
     position: absolute;
     left: 50%;
@@ -111,6 +122,16 @@ nav {
     display: none;
 }
 
+#main_img b {
+    padding: 6px 12px 10px;
+    background: #7eaf1cab;
+}
+
+#main_img span {
+    display: none;
+}
+
+/* 슬라이드 이미지 */
 #bonif {
     height: 100%;
     overflow: hidden;
@@ -193,18 +214,10 @@ nav {
 
 }
 
-#main_img b {
-    padding: 6px 12px 10px;
-    background: #7eaf1cab;
-}
-
-#main_img span {
-    display: none;
-}
 
 /* section common */
 .section {
-    padding: 81px 30px 0;
+    padding: 24px 30px 0;
 }
 
 .section h2 {
@@ -233,8 +246,10 @@ section li {
     position: absolute;
     left: 0;
     top: 0;
+    width: 140px;
     padding: 4px 12px;
     background: #7DAF1C;
+    text-align: center;
 }
 
 /* section3 */
@@ -278,9 +293,15 @@ section li {
 }
 
 #startup>select {
-    font-style: 20px;
+    font-size: 30px;
     padding: 12px 16px;
     margin: 20px 0 45px;
+}
+
+form select {
+    padding: 12px 3px;
+    color: #999;
+    border-color: #ccc;
 }
 
 ::placeholder {
@@ -294,17 +315,15 @@ footer {
     color: #fff;
 }
 
+/* 제일 짧게 표시 */
 footer span:nth-of-type(1),
 footer span:nth-of-type(3) {
     display: none;
 }
 
-/* >768 */
-@media (min-width:768px) {
 
-}
-/* >992 */
-@media (min-width: 992px) {
+/* >768 */
+@media (min-width: 768px) {
 
     /* header */
     header {
@@ -313,19 +332,14 @@ footer span:nth-of-type(3) {
     }
 
     header a {
-        padding: 20px 32px;
+        padding: 10px 4px;
     }
 
-
-    header img {
-        display: block;
-    }
-
+    /* logo */
     .logo {
         display: flex;
     }
 
-    /* logo */
 
     /* nav */
     nav {
@@ -337,16 +351,16 @@ footer span:nth-of-type(3) {
     }
 
     nav ul li:not(:first-of-type) {
-        margin-left: 36px;
+        margin-left: 20px;
     }
 
     .container li {
-        margin: 32px 0;
+        margin: 18px 0;
     }
 
     /* section1 */
     #main_img {
-        max-width: 1496px;
+        max-width: 768px;
         margin: 0 auto;
     }
 
@@ -354,11 +368,11 @@ footer span:nth-of-type(3) {
         display: inline;
     }
 
-    /* section2~4 */
+    /* section2~4 common*/
     .section {
-        width: 1496px;
+        width: 738px;
         margin: 0 auto;
-        padding: 81px 0px 0;
+        padding: 40px 0px 0;
     }
 
     .section ul {
@@ -370,8 +384,54 @@ footer span:nth-of-type(3) {
     .section li {
         width: 362px;
     }
-    .map {height: 1000px;}
 
+    /* section4 */
+
+    .map iframe {
+        height: 396px;
+    }
+
+    /* footer */
+    footer span:nth-of-type(2),
+    footer span:nth-of-type(3) {
+        display: inline;
+    }
+
+    footer span:nth-of-type(1),
+    footer span:nth-of-type(4) {
+        display: none;
+    }
+}
+
+/* >992 */
+@media (min-width: 999px) {
+
+    /* header */
+    /* 로고 나타나게 하기 */
+    header img {
+        display: block;
+    }
+
+    header a {
+        padding: 22px 0;
+    }
+
+    /* section1 */
+    #main_img {
+        max-width: 1496px;
+    }
+
+    /* section2~4 common */
+    .section {
+        width: 1496px;
+    }
+
+    /* section4 */
+    .map iframe {
+        height: 845px;
+    }
+
+    /* footer */
     footer span:nth-of-type(1),
     footer span:nth-of-type(3) {
         display: inline;
