@@ -109,15 +109,11 @@ nav {
     margin: 20px 0 45px;
     background: #000;
 }
-#news .map {
-    height: 315px;
-}
 
 /* footer */
 footer {
     background: #000;
     text-align: center;
-    margin-top: 8px;
     padding: 30px 0;
 }
 
@@ -125,8 +121,10 @@ footer span:nth-of-type(1),
 footer span:nth-of-type(3) {
     display: none;
 }
-/* 600이상 */
-@media (min-width: 600px){
+
+/* >992 */
+@media (min-width: 992px) {
+
     /* header */
     header {
         display: flex;
@@ -147,43 +145,6 @@ footer span:nth-of-type(3) {
     nav ul li:not(:first-of-type) {
         margin-left: 36px;
     }
-    /* 메인타이틀 */
-    #main_img .main_tit {
-        white-space: nowrap;
-    }
-    #main_img span {
-        display: inline-block;
-        text-shadow: 1px 1px 5px #000;
-    }
-    /* section2~4 공통 */
-    .section ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .section li {
-        width : calc(50% - 8px);
-    }
-       #event div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; 
-    }
-    #event li div {
-        height: 250px;
-    }
-      /*  section4 */
-      #news .map{
-        height: 400px;
-    }
-
-
-}
-/* >992 */ 
-
-@media (min-width: 992px) {
-   
-
 
     /* section1 */
     #main_img {
@@ -193,15 +154,19 @@ footer span:nth-of-type(3) {
 
     /* section 2~4 */
     .section {
-        max-width: 1556px;
+        width: 1496px;
         margin: 0 auto;
+        padding: 81px 0px 0;
     }
-    
 
- 
+    .section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .section li {
-        width : calc(25% - 8px);
+        width: 362px;
     }
 
     /*  section2 */
@@ -218,17 +183,7 @@ footer span:nth-of-type(3) {
 
 
     /*  section4 */
-    #news .map{
-        height: 845px;
-    }
-    /* footer */
-    footer span:nth-of-type(1),
-    footer span:nth-of-type(3) {
-    display: inline-block;
-}
-    footer span:nth-of-type(2),
-    footer span:nth-of-type(4) {
-    display: none;
-}
-    
+    /*  section5 */
+    /* 헤더 */
+    /* 헤더 */
 }
