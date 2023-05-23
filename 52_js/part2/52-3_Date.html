@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+
+<body>
+    <h1>날짜 객체</h1>
+    <script>
+
+        /* 
+            참조변수 = new Date()
+            참조변수 = new Date(연,월,일)
+
+            날짜 정보를 가져올 때(get)
+            getFullYear(): 년
+            getMonth(): 월(0:1월 ~ 11:12월)
+            getDate(): 일
+            getDay(): 요일(0:일 ~ 6:토)
+            getHours(): 시
+            getMinutes(): 분
+            getSeconds(): 초
+            getMilliseconds(): 밀리초
+            getTime(): 1970년 1월 1일부터 경과된 시간을 밀리초로 반환
+            toGMTString(): GMT 표준 표기 방식으로 문자열 데이터로 반환
+            toLocaleString(): 운영 시스템 표기 방식으로 문자열 데이터로 반환
+
+            날짜 정보를 수정할 때(set)
+            setFullYear()
+            setMonth()
+            setDate()
+            setHours()
+            setMinutes()
+            setSeconds()
+            setMilliseconds()
+            setTime()
+        */
+        //Tue May 23 2023 16:16:49 GMT+0900 (한국 표준시)
+        let d = new Date();
+        console.log(d);
+        //년(yyyy)
+        document.write(d.getFullYear(), '<br>')
+        //월(mm): 0(1월) ~ 11(12월)
+        document.write(d.getMonth() + 1, '<br>')
+        //일(dd)
+        document.write(d.getDate(), '<br>')
+        //요일(week): 0(일) ~ 6(토)
+        //if를 사용하여 요일을 일요일 ~ 토요일까지 문자열로 표시하기
+
+        let week = d.getday();
+
+
+        if (week == 0) {
+            week = '일요일';
+            } else if (week == 1) {
+            week = '월요일';
+            } else if (week == 2) {
+            week = '화요일';
+            } else if (week == 3) {
+            week = '수요일';
+            } else if (week == 4) {
+            week = '목요일';
+            } else if (week == 5) {
+            week = '금요일';
+            } else if (week == 6) {
+            week = '토요일';
+            }
+
+
+
+        document.write(week, '<br>');
+
+        //시(hh)
+        let hh = d.getHours();
+        if (hh >= 13) {
+            hh = hh - 12;
+            document.write('오후 ' + hh + '시', '<br>');
+        } else {
+            document.write('오전 ' + hh +'시', '<br>');
+        }
+        
+
+        // if (hh === 1) {
+        //     hh = '오전 1시';
+        // } else if (hh === 2) {
+        //     hh = '오전 2시';
+        // } else if (hh === 3) {
+        //     hh = '오전 3시';
+        // } else if (hh === 4) {
+        //     hh = '오전 4시';
+        // } else if (hh === 5) {
+        //     hh = '오전 5시';
+        // } else if (hh === 6) {
+        //     hh = '오전 6시';
+        // } else if (hh === 7) {
+        //     hh = '오전 7시';
+        // } else if (hh === 8) {
+        //     hh = '오전 8시';
+        // } else if (hh === 9) {
+        //     hh = '오전 9시';
+        // } else if (hh === 10) {
+        //     hh = '오전 10시';
+        // } else if (hh === 11) {
+        //     hh = '오전 11시';
+        // } else if (hh === 12) {
+        //     hh = '오후 12시';
+        // } else if (hh === 13) {
+        //     hh = '오후 1시';
+        // } else if (hh === 14) {
+        //     hh = '오후 2시';
+        // } else if (hh === 15) {
+        //     hh = '오후 3시';
+        // } else if (hh === 16) {
+        //     hh = '오후 4시';
+        // } else if (hh === 17) {
+        //     hh = '오후 5시';
+        // } else if (hh === 18) {
+        //     hh = '오후 6시';
+        // } else if (hh === 19) {
+        //     hh = '오후 7시';
+        // } else if (hh === 20) {
+        //     hh = '오후 8시';
+        // } else if (hh === 21) {
+        //     hh = '오후 9시';
+        // } else if (hh === 22) {
+        //     hh = '오후 10시';
+        // } else if (hh === 23) {
+        //     hh = '오전 11시';
+        // } else if (hh === 24) {
+        //     hh = '자정';
+        // }
+
+        document.write(hh, '<br>')
+
+        //분(mm)
+        //00 ~ 09, 10 ~ 60
+        let mm = d.getMinutes()
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        document.write(mm, '<br>')
+
+        //초(ss)
+        // 01 ~ 09 ~ 10 ~ 60
+
+        let ss = d.getSeconds();
+        if (ss <=10) {
+            ss = '0' + ss;
+        }
+        document.write(ss, '<br>')
+        document.write(d.getTime(), '<br>')
+        
+        var d2 = new Date(2020, 1, 20);
+        console.log(d2);
+
+
+        
+    </script>
+</body>
+
+</html>

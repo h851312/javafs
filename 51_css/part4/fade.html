@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 초기화 */
+        li {
+            list-style: none;
+        }
+
+        /* 페이드 효과 */
+        li {
+            position: absolute;
+            width: 838px;
+            height: 300px;
+            animation: 9s infinite;
+        }
+
+        /* 이미지 대신 색으로  */
+        li:first-of-type {
+            background: red;
+            animation-name: fade1;
+        }
+
+        li:nth-of-type(2) {
+            background: green;
+            animation-name: fade2;
+        }
+
+        li:last-of-type {
+            background: blue;
+            animation-name: fade3;
+        }
+
+        /* 애니메이션 키프레임 */
+        /* 페이드 효과: 서서히 나타났다. 서서히 사라졌다 */
+        @keyframes fade {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fade">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

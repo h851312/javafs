@@ -21,6 +21,24 @@
         */
 
 
+        function myFn1() {
+            console.log('전역함수1');
+        }
+        function myFn2() {
+            console.log('전역함수2');
+            function myFn3() {
+                console.log('지역함수1');
+
+            }
+            myFn3()
+        }
+        myFn1()
+        myFn2()
+        myFn3()
+        
+
+
+
 
     </script>
 </body>

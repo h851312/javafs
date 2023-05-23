@@ -13,8 +13,9 @@
     <div id="galleryZone">
         <p>
             <!-- 인라인 스크립트 -->
-            <button onclick="gallery(0);">이전</button>
-            <button onclick="gallery(1);">다음</button>
+            <button onclick="gallery(1);">1</button>
+            <button onclick="gallery(2);">2</button>
+            <button onclick="gallery(3);">3</button>
         </p>
         <p><img src="../assets/pic_1.jpg" alt="" id="photo"></p>
     </div>
@@ -83,7 +84,7 @@
         //      }
 
         // -함수명: gallery(drirect) 
-        // -변수:
+        // -변수: num, imgTag
         // -메서드: getElementById(), setAttribute()
         // -제어문:  if ~ else, if
         // - 이미지명: ../assets/pic_1.jpg ~ pic_1p.jpg
@@ -94,15 +95,8 @@
         let num = 1;
         
         function gallery(direct) {
-            if (direct) {
-                if (num === 10) return;
-                num++;
-            } else {
-                if (num === 1) return;
-                num--;
-                console.log(num);
-            }
-            imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
+           
+         imgTag.setAttribute('src', '../assets/pic_' + direct + '.jpg');
         }
         </script>
 </body>
