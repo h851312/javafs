@@ -11,7 +11,6 @@
 <body>
     <h1>날짜 객체</h1>
     <script>
-
         /* 
             참조변수 = new Date()
             참조변수 = new Date(연,월,일)
@@ -51,28 +50,28 @@
         //요일(week): 0(일) ~ 6(토)
         //if를 사용하여 요일을 일요일 ~ 토요일까지 문자열로 표시하기
 
-        let week = d.getday();
+        let week = d.getDay();
 
 
-        if (week == 0) {
+        if (week === 0) {
             week = '일요일';
-            } else if (week == 1) {
+        } else if (week === 1) {
             week = '월요일';
-            } else if (week == 2) {
+        } else if (week === 2) {
             week = '화요일';
-            } else if (week == 3) {
+        } else if (week === 3) {
             week = '수요일';
-            } else if (week == 4) {
+        } else if (week === 4) {
             week = '목요일';
-            } else if (week == 5) {
+        } else if (week === 5) {
             week = '금요일';
-            } else if (week == 6) {
+        } else {
             week = '토요일';
-            }
-
-
-
+        }
         document.write(week, '<br>');
+
+
+
 
         //시(hh)
         let hh = d.getHours();
@@ -80,9 +79,9 @@
             hh = hh - 12;
             document.write('오후 ' + hh + '시', '<br>');
         } else {
-            document.write('오전 ' + hh +'시', '<br>');
+            document.write('오전 ' + hh + '시', '<br>');
         }
-        
+
 
         // if (hh === 1) {
         //     hh = '오전 1시';
@@ -138,7 +137,7 @@
 
         //분(mm)
         //00 ~ 09, 10 ~ 60
-        let mm = d.getMinutes()
+        let mm = d.getMinutes();
         if (mm < 10) {
             mm = '0' + mm;
         }
@@ -148,17 +147,14 @@
         // 01 ~ 09 ~ 10 ~ 60
 
         let ss = d.getSeconds();
-        if (ss <=10) {
+        if (ss <= 10) {
             ss = '0' + ss;
         }
         document.write(ss, '<br>')
         document.write(d.getTime(), '<br>')
-        
+
         var d2 = new Date(2020, 1, 20);
         console.log(d2);
-
-
-        
     </script>
 </body>
 
