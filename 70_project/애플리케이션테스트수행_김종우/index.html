@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ValleyFestival_김종우</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Single+Day&display=swap');
+
         /* 초기화 */
         * {
             margin: 0;
@@ -38,24 +40,44 @@
             font-size: 5rem;
             text-align: center;
             height: 150px;
-            background: #cbcbcb
+            background: #cbcbcb;
+            padding: 30px 0;
         }
 
+        header div {
+            position: relative;
+            opacity: 0;
+        }
+
+        .ani {
+            animation: opa 5s forwards;
+        }
+
+        @keyframes opa {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* nav */
         /* 1 depth */
         nav {
             display: flex;
             justify-content: center;
-           
         }
 
         .main>li {
             float: left;
-            width: 160px;
+            width: 200px;
             height: 60px;
-            background: #000;
             margin: 0 40px;
+            background: #000;
             text-align: center;
-            
+
         }
 
         .main>li>a {
@@ -65,28 +87,33 @@
             line-height: 60px;
             color: #fff;
             transition: .3s;
-            z-index: 9999;
         }
 
         .main>li>a:hover {
-            background: rgb(60, 179, 113, .7);
+            background: #555;
+
         }
 
         /* 2depth */
         .sub {
             display: none;
             padding: 10px 0 20px 0;
-            background: rgba(60, 179, 113, .5);
+            background: #777;
+            opacity: 0.9;
+
         }
 
         .sub a {
             padding: 4px 8px;
             font-size: 1.4rem;
             font-weight: bold;
+
         }
 
         .sub a:hover {
-            background: rgb(0, 0, 0, .1);
+            background: #999;
+            color: #fff;
+
         }
 
         #wrap {
@@ -98,8 +125,22 @@
             background: #cbcbcb;
         }
 
+
         nav {
             height: 60px;
+        }
+
+        h1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 a {
+            color: #fff;
+            font-size: 4rem;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         }
 
         #slide {
@@ -109,13 +150,13 @@
             margin: 0 auto;
         }
 
-        #slide ul {
+        #slide>ul {
             display: flex;
             width: 400%;
             padding: 0;
-            
             position: relative;
             animation: slide 9s infinite;
+            z-index: -1;
         }
 
         #slide ul li {
@@ -126,19 +167,19 @@
         }
 
         #slide>ul>li:nth-of-type(1) {
-            background-image: url(./images/Slide1_1.png);
+            background-image: url(./images/Slide1.png);
         }
 
         #slide>ul>li:nth-of-type(2) {
-            background-image: url(./images/Slide2_1.png);
+            background-image: url(./images/Slide2.png);
         }
 
         #slide>ul>li:nth-of-type(3) {
-            background-image: url(./images/Slide3_1.png);
+            background-image: url(./images/Slide3.png);
         }
 
         #slide ul li:nth-of-type(4) {
-            background-image: url(./images/Slide1_1.png);
+            background-image: url(./images/Slide1.png);
         }
 
         @keyframes slide {
@@ -169,6 +210,7 @@
             99% {
                 left: -300%;
             }
+
             99.99% {
                 left: -300%;
             }
@@ -181,14 +223,19 @@
         footer {
             height: 150px;
             color: #fff;
+            font-size: 2rem;
             background: #5c5c5c;
+            text-align: center;
+            padding: 55px;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <div class="ani">Valley Festival</div>
+    </header>
     <div id="wrap">
-        <header>Valley Festival</header>
         <nav id="gnb">
             <ul class="main">
                 <li>
@@ -226,24 +273,28 @@
                 </li>
             </ul>
         </nav>
-        <div id="slide">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div id="logo">
+            <h1><a href="logo">Valley Festival</a></h1>
+            <div id="slide">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
+
         <footer>Copyright Vallery Festival. All rights reserved</footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         $(function () {
-            $('.main > li').mouseenter(function () {
+            $('nav').mouseenter(function () {
                 $('.sub').stop().slideDown();
             });
-            $('.main > li').mouseleave(function () {
+            $('nav').mouseleave(function () {
                 $('.sub').stop().slideUp();
             });
         });
