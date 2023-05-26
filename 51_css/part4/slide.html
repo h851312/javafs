@@ -1,36 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .slide { width: 1200px; overflow: hidden;}
-        ul {display: flex; width: 400%;
-        padding: 0; position: relative;animation: slide 9s infinite;}
-        li {list-style: none;}
-        li {width: 1200px; height: 300px;}
-        li:nth-of-type(1) {background: lightblue;}
-        li:nth-of-type(2) {background: lawngreen;}
-        li:nth-of-type(3) {background: lightcoral;}
-        li:nth-of-type(4) {background: lightblue;}
+        .slide {
+            width: 1200px;
+            overflow: hidden;
+        }
+
+        ul {
+            display: flex;
+            width: 400%;
+            padding: 0;
+            position: relative;
+            animation: slide 9s infinite;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li {
+            width: 1200px;
+            height: 300px;
+        }
+
+        li:nth-of-type(1) {
+            background: lightblue;
+        }
+
+        li:nth-of-type(2) {
+            background: lawngreen;
+        }
+
+        li:nth-of-type(3) {
+            background: lightcoral;
+        }
+
+        li:nth-of-type(4) {
+            background: lightblue;
+        }
 
         /* 애니메이션 키프레임 */
         @keyframes slide {
-            0% {left: 0;}
-            5% {left: -100%;}
-            33% {left: -200%;}
-            38% {left: -200%;}
-            66% {left: -300%;}
-            71% {left: -300%;}
-            99% {left: -300%;}
-            99.99% {left: -300%;}
-            100% {left: 0}
+            0% {
+                left: 0;
+            }
+
+            5% {
+                left: -100%;
+            }
+
+            33% {
+                left: -200%;
+            }
+
+            38% {
+                left: -200%;
+            }
+
+            66% {
+                left: -300%;
+            }
+
+            71% {
+                left: -300%;
+            }
+
+            99% {
+                left: -300%;
+            }
+
+            99.99% {
+                left: -300%;
+            }
+
+            100% {
+                left: 0
+            }
         }
-                
     </style>
 </head>
+
 <body>
     <div class="slide">
         <ul>
@@ -40,6 +95,7 @@
             <li>4</li>
         </ul>
     </div>
-    
+
 </body>
+
 </html>

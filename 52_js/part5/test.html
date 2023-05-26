@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      /* 초기화 */
          * {
         margin: 0;
         padding: 0;
@@ -43,12 +44,14 @@
         font-weight: bold;
         line-height: 40px;
         color: #fff;
+        transition: .3s;
       }
       .main > li > a:hover {
         background: rgba(255, 0, 0, 0.5);
       }
       /* 2depth */
       .sub {
+        display: none;
         padding: 10px 0 20px 0;
         background: rgba(255, 0, 0, 0.5);
       }
@@ -85,7 +88,7 @@
                 </ul>
               </li>
               <li>
-                <a href="">메인메뉴2</a>
+                <a href="#">메인메뉴2</a>
                 <ul class="sub">
                   <li><a href="#">서브메뉴1</a></li>
                   <li><a href="#">서브메뉴2</a></li>
@@ -94,7 +97,7 @@
                 </ul>
               </li>
               <li>
-                <a href="">메인메뉴3</a>
+                <a href="#">메인메뉴3</a>
                 <ul class="sub">
                   <li><a href="#">서브메뉴1</a></li>
                   <li><a href="#">서브메뉴2</a></li>
@@ -103,7 +106,7 @@
                 </ul>
               </li>
               <li>
-                <a href="">메인메뉴4</a>
+                <a href="#">메인메뉴4</a>
                 <ul class="sub">
                   <li><a href="#">서브메뉴1</a></li>
                   <li><a href="#">서브메뉴2</a></li>
@@ -113,7 +116,7 @@
               </li>
             </ul>
           </nav>
-        <div></div>
+        <div id="slide"></div>
         <footer></footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -130,7 +133,7 @@
       $('.main > li').mouseleave(function(){
         $('.sub').stop().slideUp();
       });
-
+    });
     </script>
     
 </body>
