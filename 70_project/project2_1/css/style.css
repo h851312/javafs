@@ -65,6 +65,7 @@ header {
 
 .logo {
     float: left;
+    display: flex;
 }
 
 header h2 {
