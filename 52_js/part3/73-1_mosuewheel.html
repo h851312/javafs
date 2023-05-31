@@ -13,6 +13,7 @@
             background: #888;
             margin: 50px auto;
         }
+
         div p {
             font-size: 40px;
             color: #fff;
@@ -26,6 +27,55 @@
     </div>
 
     <script>
+
+        /* 
+        div 영역 위에서 마우스휠을 조정했을때 div의 배경색을 빨강과 파랑으로 변화되게 지정하고, p요소에서 텍스트로 '마우스휠을 올렸다.''마우스휠을 내렸다.'라고 표시 되도록 지정하시오.
+
+        이벤트명: wheel
+        */
+        // const divTag = document.querySelector('div');
+        // const pTag = document.querySelector('p');
+
+        // divTag.onwheel = function(e){
+        //     if (e.deltaY > 0){
+        //         divTag.style.backgroundColor = 'red';
+        //         pTag.innerText = '마우스휠을 내렸습니다.';}
+        //         else {
+        //             divTag.style.backgroundColor = 'blue';
+        //             pTag.innerText = '마우스휠을 올렸습니다.';}
+        //         }
+
+        // const divTag = document.querySelector('div');
+        // const pTag = document.querySelector('p');
+
+        // divTag.onwheel = function(e){
+        //     if(e.deltaY >0){
+        //         divTag.style.backgroundColor = 'red';
+        //         pTag.innerText= '마우스휠을 내렸습니다';}
+        //         else {
+        //             divTag.style.backgroundColor = 'blue';
+        //             pTag.innerText = '마우스휠을 올렸습니다.';}
+        //         }
+        const divTag = document.querySelector('div');
+        const txt = divTag.children[0];
+        //const pTag = document.querySelector('p');
+        //이미 찾은 곳에서 찾는것이 빠르다.
+
+
+        divTag.onwheel = function (e) {
+            if (e.deltaY > 0) {
+                this.style.backgroundColor = 'red';
+                txt.innerText = '마우스휠을 내렸습니다.';
+            }
+            else {
+                this.style.backgroundColor = 'blue';
+                txt.innerText = '마우스휠을 올렸습니다.';
+            }
+        }
+
+
+
+
 
     </script>
 </body>

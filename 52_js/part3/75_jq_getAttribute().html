@@ -10,11 +10,13 @@
         button {
             margin: 10px;
         }
+
         .frame {
             width: 600px;
             border: 2px solid red;
             margin: 10px;
         }
+
         .frame img {
             width: 100%;
             vertical-align: top;
@@ -25,7 +27,7 @@
 <body>
     <button class="btn">이미지 속성 확인하기</button>
     <p class="frame"><img src="../assets/pic_1.jpg" alt="이미지1"></p>
-
+    <script src="jquery-3.7.0.min.js"></script>
     <script>
         /* 
             요소.getAttribute('속성명') ~ HTML 속성 반환
@@ -33,16 +35,16 @@
 
             '이미지 속성확인하기' 버튼 클릭하면 img태그의 src 속성의 값을 경고창으로 출력하시요.
             
-            메서드: getAttribute('HTML속성명')
+            메서드: attr('HTML속성명')
         */
 
-        const btn = document.querySelector('.btn');
-        const imgTag = document.querySelector('img');
-        
-        btn.onclick = function(){
-            let txt = imgTag.getAttribute('src');
+        const btn = $('.btn');
+        const imgTag = $('img');
+
+        btn.click(function () {
+            let txt = imgTag.attr('src');
             alert(txt);
-        };
+        });
 
 
     </script>

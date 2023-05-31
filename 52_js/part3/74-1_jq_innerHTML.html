@@ -23,7 +23,14 @@
     <div>
         <span>변경전 입니다.</span>
     </div>
-
+    <!-- 제이쿼리 라이브러리 파일: CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- 구글 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- 마이크로소프트 CDN -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.js"></script>
+    <!--CDNJS.com -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         /* 
             객체.속성 -> 반환(가져오기)
@@ -45,30 +52,16 @@
             
             */
 
-            // const btn = document.querySelector('button');
-            // const box = document.querySelector('div');
+            const btn = $('button');
+            const box = $('div');
 
-            // btn.onclick = function(){
-            //     box.innerHTML = '<h1>변경후입니다.</h1>';
-            //     // box.innerText = '<h1>변경후입니다.</h1>';
-            // };
-
-            // box.onclick = function(){
-            //     let abc = this.innerHTML;
-            //     alert(abc);
-            // };
-
-
-            const btn = document.querySelector('button');
-            const box = document.querySelector('div');
-
-            btn.onclick =function() {
-                box.innerHTML = '<h1>변경후입니다.</h1>';
-            }
-            box.onclick = function(){
-                let abc = box.innerHTML;
+            btn.click(function() {
+                box.html('<h1>변경후입니다.</h1>');
+            });
+            box.click(function(){
+                let abc = box.html();
                 alert(abc);
-            }
+            });
     </script>
 </body>
 

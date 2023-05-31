@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <style>
+        div {
+            width: 600px;
+            height: 400px;
+            background: #888;
+            margin: 50px auto;
+        }
+
+        div p {
+            font-size: 40px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <script>
+
+        /* 
+        children('선택자') ~ 자식만
+        find('선택자') ~ 자식+손자
+
+        var 변수 =  요소.innerHTML;
+        요소.innerHTML = 값;
+
+        var 변수 =요소.html();
+        요소.html(값);
+        */
+        const box = $('div');
+        const txt = box.find('p');
+
+        // const divTag = document.querySelector('div');
+        // const txt = divTag.children[0];
+        //const pTag = document.querySelector('p');
+        //이미 찾은 곳에서 찾는것이 빠르다.
+        box.on('mousewheel', function(e){
+            if (e.deltaY > 0) {
+                $(this).css({background: 'red'});
+                txt.html('마우스휠을 올렸습니다.');
+            }
+            else {
+                $(this).css({background: 'blue'});
+                txt.html('마우스휠을 내렸습니다.');
+            }});
+
+        // divTag.onwheel = function (e) {
+        //     if (e.deltaY > 0) {
+        //         this.style.backgroundColor = 'red';
+        //         txt.innerText = '마우스휠을 내렸습니다.';
+        //     }
+        //     else {
+        //         this.style.backgroundColor = 'blue';
+        //         txt.innerText = '마우스휠을 올렸습니다.';
+        //     }
+        // }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

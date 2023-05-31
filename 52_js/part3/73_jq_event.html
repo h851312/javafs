@@ -10,6 +10,7 @@
         body {
             height: 2000px;
         }
+
         div {
             width: 300px;
             height: 300px;
@@ -17,12 +18,15 @@
             font-size: 50px;
             color: #fff;
         }
+
         .box1 {
             background: red;
         }
+
         .box2 {
             background: blue;
         }
+
         p {
             font-size: 30px;
         }
@@ -33,7 +37,8 @@
     <div class="box1">박스1</div>
     <div class="box2">박스2</div>
     <p></p>
-    
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script>
         /* 
             Event(이벤트): 웹 문서 영역 안에서 웹 브라우저 또는 사용자가 행하는 동작
@@ -61,38 +66,53 @@
             $('선택자').이벤트(function(){});
             $('선택자').on('이벤트', function(){});
 
-        */
-       //.box1을 클릭하면 함수를 호줄한다.
-       //객체.속성 = 값;
+            $('선택자').text(값);
 
-        const box1 = document.querySelector('.box1');
-        const box2 = document.querySelector('.box2');
-        const pTag = document.querySelector('p');
+        */
+        //.box1을 클릭하면 함수를 호줄한다.
+        //객체.속성 = 값;
+
+        // const box1 = document.querySelector('.box1');
+        // const box2 = document.querySelector('.box2');
+        // const pTag = document.querySelector('p');
+        const box1 = $('.box1');
+        const box2 = $('.box2');
+        const pTag = $('p');
 
 
         //.box1을 클릭하면 함수를 호출한다.
-        box1.onclick = ev1;
+        // box1.onclick = ev1;
 
-        function ev1()
-        {pTag.innerText = '박스 1을 클릭했습니다.';}
+        // function ev1()
+        // {pTag.innerText = '박스 1을 클릭했습니다.';}
         //.box1에 마우스가 올라가면 알린다.
-        box1.onmouseenter = ev2;
-        function ev2(){pTag.innerText = '박스1 위에 마우스가 올라갔습니다.';}
+        box1.on('click', function () { pTag.text('박스1을 클릭했습니다'); });
+        box1.click(function(){pTag.text('box1을 클릭했습니다.');});
+
+        // box1.onmouseenter = ev2;
+        // function ev2(){pTag.innerText = '박스1 위에 마우스가 올라갔습니다.';}
+        box1.on('mouseenter', function () { pTag.text('박스1에 마우스를 올렸습니다'); })
+        box1.mouseenter(function(){pTag.text('박스1 에 마우스를 올렸습니다');});
+        box2.on('mousemove', function () { console.log('mousemove'), pTag.text('박스2에서 마우스가 움직입니다.'); });
 
         // box1.onmouseenter = function(){pTag.innerText = '박스1 위에 마우스가 올라갔습니다.';}
 
-        box1.addEventListener('mouseleave', function(){pTag.innerText = '박스1에서 마우스가 떠났습니다.'});
         // box1.onmouseleave = ev3;
         // function ev3(){
         //     pTag.innerText = '박스1 에서 마우스가 떠났습니다.';
         // }
 
-        window.onscroll = function(){
+        // box1.addEventListener('mouseleave', function () { pTag.innerText = '박스1에서 마우스가 떠났습니다.' });
+
+        box1.on('mouseleave', function () { pTag.text('박스1에서 마우스가 벗어났습니다.'); });
+        window.onscroll = function () {
             pTag.innerText = '스크롤 되었습니다';
         }
-        window.onresize = function(){
+        $(window).on('scroll', function () { pTag.text('스크롤 되었습니다.'); });
+        window.onresize = function () {
             pTag.innerText = '창 크기가 조정되었습니다';
         }
+        $(window).on('resize', function () { pTag.text('창크기가 조정되었습니다.'); });
 
 
 
