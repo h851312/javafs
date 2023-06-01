@@ -52,7 +52,7 @@
         </div>
     </div>
 
-
+    <script src="jquery-3.7.0.min.js"></script>
     <script>
         /*
             요소.setAttribute('속성명', '값') ~ HTML 속성 설정
@@ -69,7 +69,7 @@
             var newPic = this.src;
             pic.setAttribute("src", newPic);
         } */
-        /* 
+        /*
         썸네일 이미지를 클릭하면 위에 큰 이지가 클릭한 썸네일 이미지와 같은 이미지로 표시되도록 하시오.
         선택자: #pic(큰이미지), .small(작은이미지)
         */
@@ -86,18 +86,19 @@
             pic.setAttribute("src", newPic);
         } */
 
-        /* const bigImg = document.querySelector('#pic');
-        const thumbImg = document.querySelectorAll('.small');
-
-        for (let i = 0; i < thumbImg.length; i++) {
-            thumbImg[i].onclick = gallery;
-        }
-        function gallery () {
-            let imgSrc = this.getAttribute('src');
-            bigImg.setAttribute('src', imgSrc);
-        } */
+        
+        
+        
+        
+        $('.small').click(function () {
+            let imgSrc = $(this).attr('src');
+            $('#pic').attr('src', imgSrc);
+        });
 
         
+        
+
+
 
         /* //익명함수
         const bigImg = document.querySelector('#pic');
@@ -113,19 +114,6 @@
         } */
 
 
-
-        //화살표 함수
-        const bigImg = document.querySelector('#pic');
-        const thumbImg = document.querySelectorAll('.small');
-
-        let gallery = e => {
-            let imgSrc = e.target.getAttribute('src');
-            bigImg.setAttribute('src', imgSrc);
-        }
-
-        for (let i = 0; i < thumbImg.length; i++) {
-            thumbImg[i].onclick = gallery;
-        }
 
 
     </script>

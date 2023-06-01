@@ -31,7 +31,7 @@
     <input type="text">
     <button>성인인증</button>
     <p>당신의 나이를 숫자로 입력한 후 성인인증 버튼을 클릭하세요.</p>
-
+<script src="jquery-3.7.0.min.js"></script>
     <script>
         /* 
             요소.value ~ input에 입력된 값 반환
@@ -59,21 +59,25 @@
         // }
 
 
-        const age = document.querySelector('input');
-        const btn = document.querySelector('button');
 
-        btn.onclick = abult;
+
+
+        // $('선택자들')val
+        const age = $('input');
+        const btn = $('button');
+
+        btn.click(abult);
 
         function adult() {
             let txt;
-            if (age.value >= 19) {
-                txt = '당신은 성인입니다.'
-            } else if (age.value < 19 && age.value >= 0) {
-                txt = '당신은 미성년입니다.'
-            } else if (age.value === '' || age.value < 1) {
-                txt = '입력하지 않았거나 0이하로 입력하셨습니다. 다시 입력해 주세요.'
+            if (age.val() >= 19) {
+                txt = '당신은 성인입니다.';
+            } else if (age.val() < 19 && age.val() >= 0) {
+                txt = '당신은 미성년입니다.';
+            } else if (age.val() === '' || age.val() < 1) {
+                txt = '입력하지 않았거나 0미만으로 입력하셨습니다. 다시 입력해 주세요.';
             } else {
-                txt = '문자로 입력하셨습니다. 숫자로 입력해주세요.'
+                txt = '문자로 입력하셨습니다. 숫자로 입력해주세요.';
             }
             alert(txt);
         }
