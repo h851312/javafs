@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+JS</title>
+    <style>
+        #info::before {
+            content: 'DOM은 Document Object Model의 줄임말입니다.'
+        }
+    </style>
 </head>
 
 <body>
@@ -14,10 +19,38 @@
 
     <script>
         /* 
-            요소.createElement(노드명) ~ 요소에 요소 노드 추가
-            요소.createTextNode(텍스트) ~ 요소에 텍스트 노드 추가
+            요소a.createElement(노드명b) ~ 요소a에 요소 노드b 추가
+            요소a.createTextNode(텍스트b) ~ 요소a에 텍스트 노드b 추가
             부모노드.appendChild(자식노드) ~ 부모 노드에 자식 노드 연결
         */
+        // const newP =  document.createElement('p');
+        // const txtNode = document.createTextNode('DOM은 Document Object Model의 줄입말입니다.');
+
+        // newP.appendChild(txtNode);
+        // document.getElementById('info').appendChild(newP);
+        // const newP = document.createElement('p');
+        // const txt = document.createTextNode('DOM은 Document Object Model의 줄임말 입니다.');
+        // const div = document.getElementById('info');
+        // newP.appendChild(txt);
+        // div.appendChild(newP);
+
+        // const newP = document.createElement('p');
+        // const txt = document.createTextNode('DOM은 Document Object Model의 줄임말 입니다.');
+        // const div = document.getElementById('info');
+
+        // newP.appendChild(txt);
+        // div.appendChild(newP);
+
+        const info = document.querySelector('#info');
+        const para = document.createElement('p');
+        info.appendChild(para);
+        const txt = document.createTextNode('DOM이란? Document Object Model의 줄임말이다.');
+        para.appendChild(txt);
+
+        const imgP = document.createElement('img');
+        info.appendChild(imgP);
+        imgP.setAttribute('src', '../assets/htmltree.gif');
+        imgP.setAttribute('alt', 'DOM tree');
 
 
     </script>

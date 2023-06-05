@@ -39,7 +39,7 @@ header i {
     background-attachment: fixed; */
 
     height: 930px;
-    background: url(../images/parallax1.png) no-repeat 50% 50%/cover fixed;
+    background: url(../images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
 }
 
 .logo {

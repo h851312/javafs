@@ -19,6 +19,41 @@
             요소.setAttributeNode(노드명) ~ 요소에 속성 연결
             부모노드.appendChild(자식노드) ~ 부모 노드에 자식 노드 연결
         */
+        // const newImg = document.createElement('img');
+        // const setsrc = document.createAttribute('src');
+        // const setalt = document.createAttribute('alt');
+
+        // setsrc.value = '../assets/htmltree.gif';
+        // setalt.value = 'DOMtree';
+
+        // newImg.setAttributeNode(setsrc);
+        // newImg.setAttributeNode(setalt);
+        // document.querySelector('#info').appendChild(newImg);
+
+        // const newImg = document.createElement('img');
+        // const attrisrc = document.createAttribute('src');
+        // const attrialt = document.createAttribute('alt');
+        // attrisrc.value = '../assets/htmltree.gif';
+        // attrialt.value = 'DOM tree';
+
+        // newImg.setAttributeNode(attrisrc);
+        // newImg.setAttributeNode(attrialt);
+        // document.querySelector('#info').appendChild(newImg);
+
+        const newImg = document.createElement('img');
+        const atrrisrc = document.createAttribute('src');
+        const atrrialt = document.createAttribute('alt');
+        atrrisrc.value = '../assets/htmltree.gif';
+        atrrialt.value = 'DOMtree';
+        newImg.setAttributeNode(atrrisrc);
+        newImg.setAttributeNode(atrrialt);
+        document.querySelector('#info').appendChild(newImg);
+
+
+
+
+
+
 
     </script>
 </body>

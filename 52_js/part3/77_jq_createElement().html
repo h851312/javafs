@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+    <style>
+        #info::before {
+            content: 'DOM은 Document Object Model의 줄임말입니다.'
+        }
+    </style>
+</head>
+
+<body>
+    <h1>요소 추가하기</h1>
+    <div id="info">내용</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        /* 
+            $('선택자a').createElement('선택자b') ~ 요소a에 요소b 생성
+            before<div id="info">prepend내용append</div>after
+            A.before(b) ~ A에 b 추가
+            A.prepend(b) ~ A에 b 추가
+            A.append(b) ~ A에 b 추가
+            A.after(b) ~ A에 b 추가
+            
+        */
+        const info = document.querySelector('#info')
+        const para1 = '<p>append</p>';
+        const para2 = '<p>prepend</p>';
+        const para3 = '<p>before</p>';
+        const para4 = '<p>after</p>';
+
+        info.append(para1);
+        info.prepend(para2);
+        info.before(para3);
+        info.after(para4);
+
+        info.append
+
+
+
+
+        // #info 박스에 p 요소를 생성하고, p요소의 내용으로'DOM이란 Object Model의 줄입말입니다.'을 생성하여 #info박스에추가하시오.
+
+        //
+        // const newP =  document.createElement('p');
+        // const txtNode = document.createTextNode('DOM은 Document Object Model의 줄입말입니다.');
+
+        // newP.appendChild(txtNode);
+        // document.getElementById('info').appendChild(newP);
+        // const newP = document.createElement('p');
+        // const txt = document.createTextNode('DOM은 Document Object Model의 줄임말 입니다.');
+        // const div = document.getElementById('info');
+        // newP.appendChild(txt);
+        // div.appendChild(newP);
+
+        // const newP = document.createElement('p');
+        // const txt = document.createTextNode('DOM은 Document Object Model의 줄임말 입니다.');
+        // const div = document.getElementById('info');
+
+        // newP.appendChild(txt);
+        // div.appendChild(newP);
+
+        // const info = $('#info');
+        // const para = document.createElement('p');
+
+        // info.append(para);
+        // const txt = 'DOM이란? Document Object Model의 줄임말이다.';
+        // para.append(txt);
+
+        // const imgTag = document.createElement('img');
+        // info.append(imgTag);
+        // const srcAttr = document.createAttribute('src');
+        // const altAttr = document.createAttribute('alt');
+        // imgTag.attr({srcAttr: '../assets/htmltree.gif', altAttr:'DOM Tree'});
+
+
+    </script>
+</body>
+
+</html>

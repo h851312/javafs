@@ -45,7 +45,8 @@
 
         */
       // 변수
-        let increase = 0, decrease = 1000;
+        let increase = 0, 
+            decrease = 1000;
         const btn1 = document.getElementById('btn1'),
         btn2 = document.getElementById('btn2'),
         btn3 = document.querySelector('#btn3'),
@@ -56,7 +57,9 @@
          // function 함수
          //  };
         let auto1, auto2; 
+
         // add함수는 괄호()는 쓰지 않는다.
+
         btn1.onclick = function(){
             auto1 = setInterval(add, 1000);
         };
@@ -64,13 +67,14 @@
             clearInterval(auto1);
         };
 
+        btn3.onclick = play;
+      
+        btn4.onclick = stop;
 
         btn3.onclick = function(){
             auto2 = setInterval(sub, 1000);
         };
 
-        btn3.onclick = play;
-        btn4.onclick = stop;
 
         btn4.onclick = function(){
             clearInterval(auto2);
