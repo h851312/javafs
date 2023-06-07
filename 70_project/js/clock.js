@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
             //시(hh)
             let hh = d.getHours();
-            if (hh > 13) {
+            if (hh >= 13) {
                 hh = 'PM' + (hh - 12);
             } else if (hh >= 10) {
                 hh = 'AM' + hh;

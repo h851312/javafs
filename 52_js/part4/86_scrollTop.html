@@ -30,6 +30,21 @@
             document.documentElement.scrollTop ~ 창에서 스크롤한 양 반환
         */
 
+        // const html = document.documentElement('html');
+        /*const p = document.querySelector('p');
+
+        window.onscroll = function(){
+            let ab = document.documentElement.scrollTop;
+            p.innerText = ab;
+        }; */
+        const pTag = document.querySelector('p');
+
+        window.onscroll = function(){
+            let ab = document.documentElement.scrollTop;
+            pTag.innerText = ab;
+        };
+
+
     </script>
 </body>
 
