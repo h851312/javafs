@@ -12,6 +12,7 @@
             scroll-behavior: smooth;
         }
         
+        
         #fullpage div {height: 100vh;}
         #section1 {background: aliceblue;}
         #section2 {background: beige;}
@@ -29,6 +30,25 @@
     </div>
 
     <script>
+/* 
+마우스휠 조정시 위아래로 한칸씩 섹션 이동시킨다.
+
+이벤트: mousewheel
+메서드: next(), prev(), offset().top
+속성: top, scrollTop
+제어문: if
+
+
+$('선택자').mousewheel(function(e, delta){
+    if (delta >0){
+        //마우스휠을 위로 올림
+    } else if (delta < 0) {
+        //마우스휠을 아래로 내림
+    }
+});
+*/
+
+
 num = 1;
 
 document.documentElement.onwheel = function (event) {
