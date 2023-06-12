@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('layout.css');
+@import url('typo.css');
+@import url('nav.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&family=Play&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css');
+ /* 커스텀 스크롤바: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
+#header {
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background: #fdd000;
+}
+/* 로고 */
+.logo {
+    text-align: center;
+    letter-spacing: .5rem;
+    line-height: 1.2;
+}
+.logo b {
+    display: block;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+.logo span {
+    font-size: 1.6rem;
+}
+
+/* 풀페이지 비디오 */
+.vid {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+} 
+  

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <style>
+        /* 초기화 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        li {
+            list-style: none;
+            
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.5rem;
+        }
+        
+        /* 헤더 */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+            background: #fdd000;
+        }
+        /* 로고 */
+        .logo {
+            text-align: center;
+            letter-spacing: .5rem;
+            line-height: 1;
+        }
+        .logo b {
+            display: block;
+            font-weight: normal;
+            font-size: 2.2rem;
+        }
+        .logo span {
+            font-size: 1.6rem;
+        }
+
+        /* GNB(Golobal Navigation Bar) */
+        #gnb {
+            z-index: 99999;
+            position: relative;
+            height: 94px;
+        }
+
+        .nav_bg {
+            position: absolute;
+            left: 0;
+
+            top: 94px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        /* 크기, 색, 굵기 등으로 폰트의 위계를 지정한다   */
+        /* 1depth: main */
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main>li {
+            position: relative;
+            width: 180px;
+
+            /* 메인메뉴와 서브메뉴 모두 텍스트 가운데 */
+            text-align: center;
+        }
+
+        .main>li>a {
+            position: relative;
+            display: inline-block;
+            padding: 5px 0;
+            line-height: 94px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #101010;
+        }
+
+        .main>li>a:hover {
+            color: #333;
+        }
+
+        .main>li>a::after {
+            content: '';
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            transform: scaleX(0);
+            transition: .3s;
+            width: 100%;
+            border: 1px solid #876f05;
+            color: #ccc;
+        }
+
+        .main>li>a:hover:after {
+            transform: scaleX(1);
+
+        }
+
+        /* 2depth: sub */
+        .sub {
+            display: none;
+            padding: 15px 0;
+        }
+
+        .sub a {
+            color: #ccc;
+            font-size: 1.6rem;
+            line-height: 2;
+            font-weight: 300;
+            padding: 3px 12px;
+        }
+
+        .sub a:hover {
+            color: rgba(253, 207, 0, 0.5);
+        }
+        .member a {
+            font-size: 1.3rem;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="logo"><a href="#"><b>STRONGEGG</b><span>스트롱에그</span></a></h1>
+        <!-- 서브메뉴의 배경 -->
+        <div class="nav_bg"></div>
+        <!-- nav#gnb>ul.main>li*4>a{메인메뉴$}+ul.sub>li*4>a{서브메뉴$} -->
+        <nav id="gnb">
+            <ul class="main">
+                <li><a href="#">스트롱에그 소개</a>
+                    <ul class="sub">
+                        <li><a href="#">스트롱에그란?</a></li>
+                        <li><a href="#">스트롱에그 협동조합</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품소개</a>
+                    <ul class="sub">
+                        <li><a href="#">1회구매</a></li>
+                        <li><a href="#">정기구매</a></li>
+                        <li><a href="#">선물세트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">스트롱에그 키즈</a>
+                    <ul class="sub">
+                        <li><a href="#">캐릭터 에기</a></li>
+                        <li><a href="#">스트롱에그 선물세트</a></li>
+                        <li><a href="#">스트롱에그 CI</a></li>
+                        <li><a href="#">웰페이퍼 다운로드</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul class="sub">
+                        <li><a href="#">묻고답하기</a></li>
+                        <li><a href="#">후기 게시판</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 로그인/회원가입 -->
+        <div class="member">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        // 내비게이션바
+        $('.main >li > a').mouseenter(function (e) {
+            e.preventDefault();
+            $('.sub').stop().slideDown(400);
+            $('.nav_bg').stop().animate({ height: 180 }, 400);
+        });
+        $('nav').mouseleave(function () {
+            $('.sub').stop().slideUp(400);
+            $('.nav_bg').stop().animate({ height: 0 }, 400);
+        });
+    </script>
+</body>
+
+</html>

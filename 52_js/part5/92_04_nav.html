@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <style>
+        /* 초기화 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        * {
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 10px;
+        }
+        li {
+            list-style: none;
+        }
+        a {text-decoration: none;}
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* GNB(Golobal Navigation Bar) */
+        nav {
+            z-index: 99999;
+            position: relative;
+            height: 30px;
+            background: red;
+        }
+
+        .nav_bg {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        /* 크기, 색, 굵기 등으로 폰트의 위계를 지정한다   */
+        /* 1depth: main */
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main>li {
+            position: relative;
+            width: 180px;
+            /* 메인메뉴와 서브메뉴 모두 텍스트 가운데 */
+            text-align: center;
+        }
+        
+        .main>li>a {
+            display: block;
+            padding: 5px 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .main>li>a:hover {
+            background: #ccc;
+            color: #333;
+        }
+
+        .main>li>a:hover:after {
+            position: absolute;
+            top: 30px;
+            /* left: calc(50% - 15px); */
+            left: 50%;
+            transform: translateX(-50%);
+            content: '';
+            height: 0;
+            border-top: 10px solid;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            color: #ccc;
+        }
+
+        /* 2depth: sub */
+        .sub {
+            display: none;
+            padding: 15px 0;
+        }
+
+        .sub a {
+            color: #ccc;
+            font-size: 1.4rem;
+            line-height: 2;
+            font-weight: 300;
+            padding: 3px 12px;
+        }
+
+        .sub a:hover {
+            background: rgba(255, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav#gnb>ul.main>li*4>a{메인메뉴$}+ul.sub>li*4>a{서브메뉴$} -->
+    <nav>
+        <div class="nav_bg"></div>
+        <ul class="main">
+            <li><a href="#">스트롱에그 소개</a>
+                <ul class="sub">
+                    <li><a href="#">스트롱에그란?</a></li>
+                    <li><a href="#">스트롱에그 협동조합</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">제품소개</a>
+                <ul class="sub">
+                    <li><a href="#">1회구매</a></li>
+                    <li><a href="#">정기구매</a></li>
+                    <li><a href="#">선물세트</a></li>
+                </ul>
+            </li>
+            <li><a href="#">스트롱에그 키즈</a>
+                <ul class="sub">
+                    <li><a href="#">에기</a></li>
+                    <li><a href="#">스트롱에그 선물세트</a></li>
+                    <li><a href="#">스트롱에그 CI</a></li>
+                    <li><a href="#">웰페이퍼 다운로드</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="sub">
+                    <li><a href="#">묻고답하기</a></li>
+                    <li><a href="#">후기 게시판</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+    // 내비게이션바
+    $('.main >li > a').mouseenter(function(e){
+        e.preventDefault();
+        $('.sub').stop().slideDown(400);
+        $('.nav_bg').stop().animate({height:170}, 400);
+    });
+    $('nav').mouseleave(function(){
+        $('.sub').stop().slideUp(400);
+        $('.nav_bg').stop().animate({height:0}, 400);
+    });
+    </script>
+</body>
+
+</html>
