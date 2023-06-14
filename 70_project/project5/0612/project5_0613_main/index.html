@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메가커피</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
@@ -68,6 +69,7 @@
             </div> -->
 
             <!-- 캐로셀 -->
+
             <div id="slideWrap">
                 <ul class="slider">
                     <li class="bg1">
@@ -95,7 +97,6 @@
                         </div>
                     </li>
                 </ul>
-
                 <!-- pager -->
                 <div class="pager">
                     <a class="active"><img src="image/btn1.png" alt="페이저1"></a>
@@ -103,7 +104,6 @@
                     <a><img src="image/btn3.png" alt="페이저3"></a>
                     <a><img src="image/btn4.png" alt="페이저4"></a>
                 </div>
-
                 <!-- prev/next -->
                 <div class="btn">
                     <a href="#" id="prev"><i class="fa-solid fa-chevron-left"></i></a>
@@ -111,10 +111,11 @@
                 </div>
             </div>
 
-            <!-- <div id="footer">footer</div> -->
+
         </div>
+        <!-- <div id="footer">footer</div> -->
         <!-- 섹션2 -->
-        <section class="section" id="section2">
+        <div class="section" id="section2">
             <div class="txt txt1">
                 <img src="./assets/text1.png" alt="텍스트1">
             </div>
@@ -127,11 +128,91 @@
                 <div class="prod2"></div>
                 <div class="prod3"></div>
             </div>
-        </section>
-        <section id="section3">
+        </div>
 
-        </section>
-
+        <!-- 섹션3 -->
+        <div class="section" id="section3">
+            <!-- 썸네일 이미지와 텍스트 -->
+            <div class="innerWrap">
+                <ul class="thumb">
+                    <li class="active">
+                        <img src="image/thumb1.png" alt="트러플 전복죽">
+                        <span>트러플 전복죽</span>
+                    </li>
+                    <li>
+                        <img src="image/thumb2.png" alt="함박스테이크 볼카츠 반상">
+                        <span>함박스테이크 볼카츠 반상</span>
+                    </li>
+                    <li>
+                        <img src="image/thumb3.png" alt="충청도 석갈비 반상">
+                        <span>충청도 석갈비 반상</span>
+                    </li>
+                    <li>
+                        <img src="image/thumb4.png" alt="전통설렁탕">
+                        <span>전통설렁탕</span>
+                    </li>
+                    <li>
+                        <img src="image/thumb5.png" alt="이니스프리 PLAYGREEN">
+                        <span>이니스프리 PLAYGREEN</span>
+                    </li>
+                </ul>
+                <!-- 가운테 큰 이미지 -->
+                <ul class="big">
+                    <li class="active"><img src="image/big1.png" alt="트러플 전복죽"></li>
+                    <li><img src="image/big2.png" alt="함박스테이크 볼카츠 반상"></li>
+                    <li><img src="image/big3.png" alt="충청도 석갈비 반상"></li>
+                    <li><img src="image/big4.png" alt="전통설렁탕"></li>
+                    <li><img src="image/big5.png" alt="이니스프리 PLAYGREEN"></li>
+                </ul>
+                <ul class="txt">
+                    <li class="active">
+                        <h2>본죽</h2>
+                        <h3>트러플 전복죽</h3>
+                        <p>바다의 진미 전복과 흙 속의 보석 트러플 오일이 만나 요리가 되다!
+                            더욱 깊어진 풍미에 부드러운 전복과 식감 좋은 톳, 트러플 오일로 완성한 품격이 다른 전복죽.
+                            본죽만의 시그니처 별미 요리죽.</p>
+                        <button>더보기 &gt;</button>
+                    </li>
+                    <li>
+                        <h2>본도시락</h2>
+                        <h3>함박스테이크 볼카츠 반상</h3>
+                        <p>육즙이 꽉 찬 함박스테이크와 특별함을 더해주는 특제 타레소스, 겉바속촉 볼카츠까지!
+                            온 가족이 다 함께 즐거운 HAPPY 도시락을 만나보세요</p>
+                        <button>더보기 &gt;</button>
+                    </li>
+                    <li>
+                        <h2>본우리반상</h2>
+                        <h3>충청도 석갈비 반상</h3>
+                        <p>두툼한 고기를 달달한 간장으로 숙성시킨 후
+                            구워내어 마지막 한 점까지 따뜻하게 즐기는 석갈비 반상.</p>
+                        <button>더보기 &gt;</button>
+                    </li>
+                    <li>
+                        <h2>본설렁탕</h2>
+                        <h3>전통설렁탕</h3>
+                        <p>열두 시간의 정성으로 우려낸 한우사골육수에
+                            잘 지은 밥과 쫄깃한 구운면을 더한 설렁탕</p>
+                        <button>더보기 &gt;</button>
+                    </li>
+                    <li>
+                        <h2>Our Activities</h2>
+                        <h3>이니스프리 PLAYGREEN</h3>
+                        <p>그린라이프는 결코 어렵고 지루한 것이 아닌 놀이가 될 수 있다는 생각! 이니스프리의 플레이그린(PLAYGREEN) 입니다. 365일 일상에서 놀이처럼 즐기는 지구를
+                            위한 모든 활동이
+                            플레이그린에 포함됩니다. 에코손수건과 공병 캠페인처럼 일상에서 놀이처럼 즐기는 활동으로 지구를 지키는데 동참하세요!</p>
+                        <button>더보기 &gt;</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 섹션3 -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

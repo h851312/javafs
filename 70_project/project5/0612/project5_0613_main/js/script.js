@@ -107,9 +107,9 @@ $(function () {
 });
 //섹션2
 const sec2 = $('#section2'),
-btn = sec2.find('.btn'),
-txt1 = sec2.find('.txt1'),
-txt2 = sec2.find('.txt2');
+    btn = sec2.find('.btn'),
+    txt1 = sec2.find('.txt1'),
+    txt2 = sec2.find('.txt2');
 
 $(window).scroll(function () {
     let sT = $(this).scrollTop();
@@ -117,15 +117,32 @@ $(window).scroll(function () {
     console.log(sT);
 
     if (sT >= stVal) {
-        btn.css({opacity : 1});
-        txt1.css({left :360 +'px'});
+        btn.css({ opacity: 1 });
+        txt1.css({ left: 360 + 'px' });
         // txt.style.left = 400 + 'px';
-        txt2.css({left :360 +'px'});
+        txt2.css({ left: 360 + 'px' });
 
     } else {
-        btn.css({opacity : 0});
-        txt1.css({left :-800 + 'px'});
+        btn.css({ opacity: 0 });
+        txt1.css({ left: -800 + 'px' });
         // txt.style.left = -400 + 'px';
-        txt2.css({left :-400 +'px'});
+        txt2.css({ left: -400 + 'px' });
     }
+});
+
+// 섹션3
+
+const tabBtn = $('.thumb li'),
+    bigImg = $('.big li'),
+    txt = $('.innerWrap .txt li');
+
+tabBtn.click(function () {
+    let idx = $(this).index();
+    tabBtn.removeClass('active');
+    bigImg.removeClass('active');
+    txt.removeClass('active');
+    // $(this).addClass('active');
+    // bigImg.eq(idx).addClass('active');
+    // txt.eq(idx).addClass('active');
+
 });
