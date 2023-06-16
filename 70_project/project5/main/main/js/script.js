@@ -108,7 +108,8 @@ $(function () {
     const sec2 = $('#section2'),
         btn = sec2.find('.btn'),
         txt1 = sec2.find('.txt1'),
-        txt2 = sec2.find('.txt2');
+        txt2 = sec2.find('.txt2'),
+        header = $('header');
 
     $(window).scroll(function () {
         let sT = $(this).scrollTop();
@@ -120,12 +121,16 @@ $(function () {
             txt1.css({ left: 360 + 'px' });
             // txt.style.left = 400 + 'px';
             txt2.css({ left: 360 + 'px' });
+            //네비게이션 바 색 변화
+            header.css({background:'#fdd000'});
 
         } else {
             btn.css({ opacity: 0 });
             txt1.css({ left: -800 + 'px' });
             // txt.style.left = -400 + 'px';
             txt2.css({ left: -400 + 'px' });
+            //네비게이션 바 색 변화
+            header.css({background:'transparent'});
         }
     });
 
@@ -195,6 +200,36 @@ $(function () {
         // inner.eq(idx).find('li').eq(cnt).fadeIn(1000);
 
     };
+
+    // 패밀리사이트
+
+    const fs = $('.fs'),
+        fsLst = fs.find('ul'),
+        fsIcon = fs.find('i'),
+        fsTxt = fs.find('span'),
+        fsBtn = fs.find('.fsBtn');
+    let state = 0;
+    //.fsBtn을 클릭하면 함수 실행
+    fsBtn.click(function (e) {
+        e.preventDefault;
+        
+        fsLst.slideToggle();
+        
+        
+        if (state == 0) {
+            
+            fsIcon.attr({ class: 'fa-solid fa-minus' });
+            fsTxt.text('관련 사이트 닫기');
+            state = 1;
+            
+        } else {
+            fsIcon.attr({ class: 'fa-solid fa-plus' });
+            fsTxt.text('관련 사이트 열기');
+            state = 0;
+            
+        }
+    });
+
 
 
 

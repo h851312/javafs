@@ -63,18 +63,15 @@ header {
 
 }
 
-.logo {
-    float: left;
+nav {
+display: flex;
+justify-content: space-between;
 }
 
 header h2 {
     margin: 25px 0;
     color: #fff;
     display: inline-block;
-}
-
-nav {
-    float: right;
 }
 
 nav li {
