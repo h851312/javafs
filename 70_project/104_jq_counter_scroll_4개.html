@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        div {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Counter</h1>
+    </div>
+    <div id="counter">
+        <ul>
+            <li><span>0+</span>텍스트</li>
+            <li><span>0+</span>텍스트</li>
+            <li><span>0+</span>텍스트</li>
+            <li><span>0+</span>텍스트</li>
+        </ul>
+    </div>
+
+    <br>
+    <button>Click Me</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        const elem = $('#counter span');
+        let state = 0;
+        $(window).scroll(function () {
+            //윈도우 스크롤이 150이상이면
+            /*       if ($(this).scrollTop() >= 150) {
+                      if (state === 0) {
+                          move(0, 20, 100);
+                          move(1, 4, 500);
+                          move(2, 5, 400);
+                          move(3, 2, 1000);
+                          state = 1;
+                      } else {
+                          return;
+                      }
+                  }
+              }); 
+              */
+            if ($(this).scrollTop() >= 150) {
+                if (state === 0) {
+                    move(0, 20, 100);
+                    move(1, 4, 500);
+                    move(2, 5, 400);
+                    move(3, 2, 1000);
+                    state = 1;
+                } else {
+                    return;
+                }
+            } else {
+                state = 0;
+                //  올렸다 내릴때 마다 동작
+            }
+        });
+
+
+        // let st = $('this').scroll;
+        function move(idx, maxCnt, mSec) {
+            let num = 0;
+            //count 함수를 0.1초마다 실행
+            const timer = setInterval(counter, mSec);
+            function counter() {
+                if (num >= maxCnt) {
+                    clearInterval(timer);
+                } else {
+                    num++;
+                    elem.eq(idx).text(`${num}+`);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
