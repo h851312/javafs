@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        var apiURI = "https://api.openweathermap.org/data/2.5/weather?id=1846898&appid=8923b63d5cbf09d0083020f49fc68a36&units=metric";
+
+        $.ajax({
+            url : apiURI,
+            type : 'GET',  //타입(GET, POST, PATCH, PUT 등등)
+            success : function(resp) { //결과 성공 콜백함수
+                var $cTemp = resp.main.temp;
+                var $humidity = resp.main.humidity;
+                var $weather = resp.weather[0].main;
+                var $description = resp.weather[0].description;
+                var $icon = resp.weather[0].icon;
+                var $wind = resp.wind.speed;
+                var $country = resp.sys.country;
+                var $city = resp.name;
+                var $cloud = resp.clouds.all + "%";
+
+                console.log("현재온도 : " + resp.main.temp);
+                console.log("현재습도 : " + resp.main.humidity);
+                console.log("날씨 : " + resp.weather[0].main);
+                console.log("상세날씨 설명 : " + resp.weather[0].description);
+                console.log("날씨 이미지 : " + resp.weather[0].icon);
+                console.log("바람 : " + resp.wind.speed);
+                console.log("나라 : " + resp.sys.country);
+                console.log("도시이름 : " + resp.name);
+                console.log("구름 : " + resp.clouds.all + "%");
+
+                $(".ctemp").append($cTemp);
+                $(".humidity").append($humidity);
+                $(".weather").append($weather);
+                $(".description").append($description);
+                $(".icon").append($icon);
+                $(".wind").append($wind);
+                $(".country").append($country);
+                $(".city").append($city);
+                $(".cloud").append($cloud);
+            }
+        });
+
+        /* $.getJSON("https://api.openweathermap.org/data/2.5/weather?id=1846898&appid=8923b63d5cbf09d0083020f49fc68a36&units=metric", function (data) {
+            var $cTemp = data.main.temp;
+            var $maxTemp = data.main.temp_max;
+            var $minTemp = data.main.temp_min;
+            var $wIcon = data.weather[0].icon;
+            console.log($cTemp, $maxTemp, $minTemp);
+            
+            $(".ctemp").append($cTemp); 
+            $(".clowtemp").append($minTemp); 
+            $(".chightemp").append($maxTemp); 
+            // $(".cicon").append("<img src='https://openweathermap.org/img/wn/"+$wIcon+"@2x.png'>");
+            //백팁문법 
+            $(".cicon").append(`<img src="https://openweathermap.org/img/wn/${$wIcon}@2x.png">`);
+
+
+            var $now = new Date();
+            var $cDate = $now.getFullYear() + "/" + ($now.getMonth()+1) + "/" + $now.getDate() + " " + $now.getHours() + ":" + $now.getMinutes();
+            $('h2').prepend($cDate);
+        }); */
+        
+        
+    </script>
+</head>
+
+<body>
+    <h1>weather api</h1>
+    <h2>-날씨정보</h2>
+    <div class="ctemp">현재온도: </div>
+    <div class="humidity">현재습도: </div>
+    <div class="weather">날씨: </div>
+    <div class="description">상세날씨: </div>
+    <div class="icon">이미지: </div>
+    <div class="wind">바람: </div>
+    <div class="country">나라: </div>
+    <div class="city">도시이름: </div>
+    <div class="cloud">구름: </div>
+
+</body>
+
+</html>
