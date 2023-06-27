@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            
+            height: 100vh;
+            transition:.5s;
+            opacity: 0;
+        }
+        img {
+            position: absolute;
+            left: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Jquery UI</h1>
+    <div></div>
+    <div class="scrollPage1"><img src="./images/work1.jpg" alt="images1"></div>
+    <div class="scrollPage2"><img src="./images/work2.jpg" alt="images2"></div>
+    <div class="scrollPage3"><img src="./images/work3.jpg" alt="images3"></div>
+    <div class="scrollPage4"><img src="./images/work4.jpg" alt="images4"></div>
+    <div class="scrollPage5"><img src="./images/work5.jpg" alt="images5"></div>
+    <div class="scrollPage6"><img src="./images/work6.jpg" alt="images6"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        const page1 = $('.scrollPage1');
+        const page2 = $('.scrollPage2');
+        const page3 = $('.scrollPage3');
+        const page4 = $('.scrollPage4');
+        const page5 = $('.scrollPage5');
+        const page6 = $('.scrollPage6');
+
+        //윈도우에 스크롤 이벤트가 발생하면 함수 실행
+
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            let stVal = 600;
+            console.log(st);
+            if (st >= stVal) {
+                page1.css({top: 50+"px", opacity: 1});
+            } else {
+                page1.css({opacity: 0 });
+            }
+        });
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            let stVal = 1500;
+            console.log(st);
+            if (st >= stVal) {
+                page2.css({opacity: 1});
+            } else {
+                page2.css({opacity: 0 });
+            }
+        });
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            let stVal = 2400;
+            console.log(st);
+            if (st >= stVal) {
+                page3.css({opacity: 1});
+            } else {
+                page3.css({opacity: 0 });
+            }
+        });
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            let stVal = 3300;
+            console.log(st);
+            if (st >= stVal) {
+                page4.css({opacity: 1});
+            } else {
+                page4.css({opacity: 0 });
+            }
+        });
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            let stVal = 4200;
+            console.log(st);
+            if (st >= stVal) {
+                page5.css({opacity: 1});
+            } else {
+                page5.css({opacity: 0 });
+            }
+        });
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            let stVal = 5100;
+            console.log(st);
+            if (st >= stVal) {
+                page6.css({opacity: 1});
+            } else {
+                page6.css({opacity: 0 });
+            }
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
