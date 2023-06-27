@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #btn1:checked~#tab1 {
+            display: block;
+        }
+
+        #btn2:checked~#tab2 {
+            display: block;
+        }
+
+        #btn3:checked~#tab3 {
+            display: block;
+        }
+
+        .tab {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        
+        .tab>div {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <label for="btn1">메뉴1</label>
+        <label for="btn2">메뉴2</label>
+        <label for="btn3">메뉴3</label>
+        <input type="radio" name="tabs" id="btn1" checked>
+        <input type="radio" name="tabs" id="btn2">
+        <input type="radio" name="tabs" id="btn3">
+        <div id="tab1">
+            <h2>메뉴1</h2>
+            <p>메뉴1의 건의 사항입니다.</p>
+            <p>메뉴1의 건의 사항입니다.</p>
+            <p>메뉴1의 건의 사항입니다.</p>
+            <p>메뉴1의 건의 사항입니다.</p>
+            <p>메뉴1의 건의 사항입니다.</p>
+        </div>
+        <div id="tab2">
+            <h2>메뉴2</h2>
+            <p>메뉴2의 건의 사항입니다.</p>
+            <p>메뉴2의 건의 사항입니다.</p>
+            <p>메뉴2의 건의 사항입니다.</p>
+            <p>메뉴2의 건의 사항입니다.</p>
+            <p>메뉴2의 건의 사항입니다.</p>
+        </div>
+        <div id="tab3">
+            <h2>메뉴3</h2>
+            <p>메뉴3의 건의 사항입니다.</p>
+            <p>메뉴3의 건의 사항입니다.</p>
+            <p>메뉴3의 건의 사항입니다.</p>
+            <p>메뉴3의 건의 사항입니다.</p>
+            <p>메뉴3의 건의 사항입니다.</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
