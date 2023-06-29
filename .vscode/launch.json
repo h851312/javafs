@@ -1,0 +1,441 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ex4_15_6",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15_6",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_15_5",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15_5",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_15_4",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15_4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Binary",
+            "request": "launch",
+            "mainClass": "a0626.Binary",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Char1",
+            "request": "launch",
+            "mainClass": "a0626.Char1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Datatype1",
+            "request": "launch",
+            "mainClass": "a0626.Datatype1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Num1",
+            "request": "launch",
+            "mainClass": "a0626.Num1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Num2",
+            "request": "launch",
+            "mainClass": "a0626.Num2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Prog",
+            "request": "launch",
+            "mainClass": "a0626.Prog",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Prog1",
+            "request": "launch",
+            "mainClass": "a0626.Prog1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String1",
+            "request": "launch",
+            "mainClass": "a0626.String1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String2",
+            "request": "launch",
+            "mainClass": "a0626.String2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Substring1",
+            "request": "launch",
+            "mainClass": "a0626.Substring1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Binary(1)",
+            "request": "launch",
+            "mainClass": "a0627.Binary",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "BitShiftExample1",
+            "request": "launch",
+            "mainClass": "a0627.BitShiftExample1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Char1(1)",
+            "request": "launch",
+            "mainClass": "a0627.Char1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Char2",
+            "request": "launch",
+            "mainClass": "a0627.Char2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Double1",
+            "request": "launch",
+            "mainClass": "a0627.Double1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Final",
+            "request": "launch",
+            "mainClass": "a0627.Final",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Opex01",
+            "request": "launch",
+            "mainClass": "a0627.Opex01",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Plus1",
+            "request": "launch",
+            "mainClass": "a0627.Plus1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Plus2",
+            "request": "launch",
+            "mainClass": "a0627.Plus2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "X1",
+            "request": "launch",
+            "mainClass": "a0627.X1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "X2",
+            "request": "launch",
+            "mainClass": "a0627.X2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "X3",
+            "request": "launch",
+            "mainClass": "a0627.X3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "X4",
+            "request": "launch",
+            "mainClass": "a0627.X4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "X5",
+            "request": "launch",
+            "mainClass": "a0627.X5",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "X6",
+            "request": "launch",
+            "mainClass": "a0627.X6",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "X7",
+            "request": "launch",
+            "mainClass": "a0627.X7",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_10",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_10",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_11",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_11",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_12",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_12",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_13",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_13",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_14",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_14",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_15",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_15",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_16",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_16",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_17",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_17",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_9",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_9",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_1",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_3",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_4",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_5",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_5",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "IfDiceExample",
+            "request": "launch",
+            "mainClass": "a0628.IfDiceExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_10",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_10",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_11",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_11",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_12",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_12",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_12_1",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_12_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_13",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_13",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_14",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_14",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_14_1",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_14_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_15",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_15_1",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_15_2",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15_2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_15_3",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15_3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_6",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_6",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_7",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_7",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_7_1",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_7_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_7_2",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_7_2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_8",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_8",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_9",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_9",
+            "projectName": "javafs_c8ed48f6"
+        }
+    ]
+}

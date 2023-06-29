@@ -11,24 +11,74 @@
             padding: 0;
             box-sizing: border-box;
         }
-        header {
-            position: relative;
-        }
-        div {display: inline-block;}
-        li {display: inline-block;}
-        nav {
-            width: 760px;
-            height: 100px;
+
+        html {
+            font-size: 10px;
         }
 
+        header {
+            width: 1920px;
+
+
+        }
+
+        nav {
+            margin: 0 auto;
+            width: 980px;
+        }
+
+        nav>a>img {
+            margin-top: 36px;
+        }
+
+        .log {
+            width: 980px;
+            text-align: end;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 10px;
+        }
+
+        .nav {
+            width: 980px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: end;
+            display: inline-block;
+            position: relative;
+            bottom: 20px;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .section1 {
+            width: 1920px;
+            height: 600px;
+            background-image: url(images/bg_visual_1.jpg);
+        }
+        .section1 ul {
+            width: 980px;
+            height: 80px;
+            background: rgba(51, 51, 51, 0.5);
+            position: relative;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .section2 {
+            height: 250px;
+            background: #000;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
+            <a href="#"><img src="./images/삼천리.gif" alt="logo"></a>
             <div class="log">
-                <a href="#"><img src="./images/삼천리.gif" alt="logo"></a>
                 <ul>
                     <li>로그인</li>
                     <li>회원가입</li>
@@ -51,9 +101,25 @@
                 </ul>
             </div>
         </nav>
-        <div class="section1">
-
-        </div>
+        <section>
+            <div class="section1">
+                <ul>
+                    <li><a href="#">요금조회</a></li>
+                    <li><a href="#">요금납부</a></li>
+                    <li><a href="#">전출입신청</a></li>
+                    <li><a href="#">간편요금조회</a></li>
+                    <li><a href="#">신청서양식</a></li>
+                    <li><a href="#">협력업체</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="section2">
+                <div><img src="images/도시가스 관련 요금조회 납부_ 전출 전입 접수_ 자동이체신청 등 편.jpg" alt=""></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
 
     </header>
 
