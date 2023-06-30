@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ex4_5",
+            "request": "launch",
+            "mainClass": "a0630.Ex4_5",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_4",
+            "request": "launch",
+            "mainClass": "a0630.Ex4_4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_3",
+            "request": "launch",
+            "mainClass": "a0630.Ex4_3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_1",
+            "request": "launch",
+            "mainClass": "a0630.Ex4_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_9_2",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_9_2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_9_1",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_9_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_9",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_9",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_8",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_8",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_6",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_6",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_5",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_5",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_4",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_3",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_2",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_1",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "Ex4_15_6",
             "request": "launch",
             "mainClass": "a0629.Ex4_15_6",
