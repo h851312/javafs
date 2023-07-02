@@ -45,38 +45,65 @@
             top: 200px;
             z-index: -1;
         }
-        span {font-size: 4rem;
+
+        span {
+            font-size: 4rem;
             font-weight: bold;
-            
+            opacity: 0;
+            top: 500px;
+
         }
-        
-        .bg1 span{
+
+        .bg1 span {
             position: absolute;
-            top: 450px;
             left: 850px;
         }
+
         .bg2 span {
             position: absolute;
-            top: 450px;
+            top: 500px;
             left: 800px;
         }
+
         .bg3 span {
             position: absolute;
-            top: 450px;
+            top: 500px;
             left: 850px;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <script>
+
         $(function () {
             const slider = $('.slider').bxSlider({
                 mode: 'fade',
-                auto: 'true',
+                auto: true,
                 speed: 1000,
                 pause: 3000,
-
+                onSlideBefore: function () {
+                    autoPager();
+                },
+                onSlideAfter: function () {
+                    titMotion();
+                }
             });
+            function titMotion() {
+                // 슬라이드 전환 직후의 텍스트 모션
+                $('span').animate({ top: 450, opacity: 1 });
+            }
+            function autoPager() {
+        // 페이저의 이미지 변경
+        // 페이저 a태그의 active 클래스 모두 제거
+        $('#slideWrap .pager a').removeClass('active');
+        // 현재 슬라이드 번호를 가져와서 currentIdx에 저장
+        let currentIdx = slider.getCurrentSlide();
+        $('#slideWrap .pager a').eq(currentIdx).addClass('active');
+
+        // 슬라이드 전환 직전의 텍스트 모션
+        $('#slideWrap .slider li div ').css({ top: 100, opacity: 0 });
+    }
+
         });
     </script>
 </head>
