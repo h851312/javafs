@@ -9,10 +9,12 @@ public class Ex4_5 {
         // }
         int j = 0;
         int i = 0;
+        int sum =0;
         while (i <= 10) {
-        System.out.println("*");
-        sum += ++i;
+            System.out.println("*");
+            sum += ++i;
       
         
+    }
     }
 }

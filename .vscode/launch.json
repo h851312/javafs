@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Index0fConTainsExample",
+            "request": "launch",
+            "mainClass": "a0703.Index0fConTainsExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "SubStringString",
+            "request": "launch",
+            "mainClass": "a0703.SubStringString",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String1",
+            "request": "launch",
+            "mainClass": "a0703.String1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "EqualsExample",
+            "request": "launch",
+            "mainClass": "a0703.EqualsExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ReferenceVariableCompareExample",
+            "request": "launch",
+            "mainClass": "a0703.ReferenceVariableCompareExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "CarExample",
+            "request": "launch",
+            "mainClass": "a0703.CarExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_2",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_1",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ArrayList1",
+            "request": "launch",
+            "mainClass": "a0703.ArrayList1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Array1",
+            "request": "launch",
+            "mainClass": "a0703.Array1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "Ex4_5",
             "request": "launch",
             "mainClass": "a0630.Ex4_5",
