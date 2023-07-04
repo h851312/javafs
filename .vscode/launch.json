@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ex6_3_9",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_3_9",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_3_8",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_3_8",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_3_7",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_3_7",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_3_6",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_3_6",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_3",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "SplitExample",
+            "request": "launch",
+            "mainClass": "a0703.SplitExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "Index0fConTainsExample",
             "request": "launch",
             "mainClass": "a0703.Index0fConTainsExample",
