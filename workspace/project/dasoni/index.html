@@ -50,9 +50,18 @@
             font-size: 4rem;
             font-weight: bold;
             opacity: 0;
-            top: 500px;
 
         }
+        p{ font-size: 1.8rem; font-weight: bold;
+            position: relative;
+            opacity: 0;
+
+        }
+        .p1 {top: -100px;}
+        
+        .p2 {
+            top: 250px;}
+        
 
         .bg1 span {
             position: absolute;
@@ -61,7 +70,7 @@
 
         .bg2 span {
             position: absolute;
-            top: 500px;
+            top: 450px;
             left: 800px;
         }
 
@@ -91,18 +100,22 @@
             function titMotion() {
                 // 슬라이드 전환 직후의 텍스트 모션
                 $('span').animate({ top: 450, opacity: 1 });
+                $('.p1').animate({top:-40, opacity:1 })
+                $('.p2').animate({top:100, opacity:1 })
             }
             function autoPager() {
-        // 페이저의 이미지 변경
-        // 페이저 a태그의 active 클래스 모두 제거
-        $('#slideWrap .pager a').removeClass('active');
-        // 현재 슬라이드 번호를 가져와서 currentIdx에 저장
-        let currentIdx = slider.getCurrentSlide();
-        $('#slideWrap .pager a').eq(currentIdx).addClass('active');
+                // 페이저의 이미지 변경
+                // 페이저 a태그의 active 클래스 모두 제거
+                $('.pager a').removeClass('active');
+                // 현재 슬라이드 번호를 가져와서 currentIdx에 저장
+                let currentIdx = slider.getCurrentSlide();
+                $('.pager a').eq(currentIdx).addClass('active');
 
-        // 슬라이드 전환 직전의 텍스트 모션
-        $('#slideWrap .slider li div ').css({ top: 100, opacity: 0 });
-    }
+                // 슬라이드 전환 직전의 텍스트 모션
+                $('span').css({ top: 500, opacity: 0 });
+                $('.p1').css({ top :-10, opacity:0 });
+                $('.p2').css({ top :150, opacity:0});
+            }
 
         });
     </script>
@@ -113,19 +126,25 @@
         <li class="bg1">
             <div>
                 <img src="./images/main_txt_box.png" alt="텍스트 상자">
+                <p class="p1">언택트 시대 필수과정</p>
                 <span>비대면 상담<br>비대면검사</span>
+                <p class="p2">이제 당신의 공간에서 전문상담사를 만나보세요</p>
             </div>
         </li>
         <li class="bg2">
             <div>
                 <img src="./images/main_txt_box.png" alt="텍스트 상자">
+                <p class="p1">가격부담 Down x 치료기대효과 Up </p>
                 <span>다소니관계테라피</span>
+                <p class="p2">검사와 상담이 모두 필요한 여러분에게 딱!</p>
             </div>
         </li>
         <li class="bg3">
             <div>
                 <img src="./images/main_txt_box.png" alt="텍스트 상자">
+                <p class="p1">언택트 시대 필수과정</p>
                 <span>비대면 상담<br>비대면검사</span>
+                <p class="p2">이제 당신의 공간에서 전문상담사를 만나보세요</p>
             </div>
         </li>
     </ul>

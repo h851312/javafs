@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>samchully_김종우</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <style>
         * {
             margin: 0;
@@ -114,17 +117,39 @@
             width: 520px;
             height: 250px;
         }
+        
 
         .slide1 {
             background: #0697E1;
+        }
+        .slide1 >div {
+            width: 200px;
+            height: 133px;
+            margin:0 auto;
+        }
+        .slide2 >div {
+            width: 200px;
+            height: 133px;
+            margin:0 auto;
         }
 
         .notice1 {
             width: 240px;
             height: 250px;
             background: rgb(0, 124, 188);
+            display: block;
         }
+        .notice1 > ul > li > a {color: #fff;
+        font-size: 2rem;}
     </style>
+       <script>
+        $(function(){
+            $(".slider").bxSlider();
+
+        });
+        
+
+    </script>
 </head>
 
 <body>
@@ -168,21 +193,24 @@
                         <li><a href="#">납부자번호입력</a></li>
                         <button>협력업체</button>
                     </ul>
+                </section>
             </div>
         </section>
         <section>
             <div class="section2">
                 <div class="main1"><img src="images/도시가스 관련 요금조회 납부_ 전출 전입 접수_ 자동이체신청 등 편.jpg" alt=""></div>
                 <div class="slide1">
-                    <ul>
-                        <li><img src="images/천만장학회 공모전 _천만 아트 포 영_ 전시회 개막.jpg" alt=""></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div>
+                        <ul class="slider">
+                            <li><img src="images/천만장학회 공모전 _천만 아트 포 영_ 전시회 개막.jpg" alt="사진1"></li>
+                            <li><img src="images/삼천리_ _제57기 정기 주주총회_ 개최.jpg" alt="사진2"></li>
+                            <li><img src="images/_한국에서 가장 존경받는 기업_ 20년 연속 선정.jpg" alt="사진3"></li>
+                            <li><img src="images/미래 인재 육성의 든든한 후원자_ 천만장학회.jpg" alt="사진4"></li>
+                            <li><img src="images/삼천리_ _안전보건 실천 다짐대회_ 개최.jpg" alt="사진5"></li>
+                            <li><img src="images/어려운 이웃 향해 온정 담긴 손길 내미는 삼천리그룹.jpg" alt="사진6"></li>
+                        
+                        </ul>
+                    </div>
                 </div>
                 <div class="notice1">
                     <ul>
@@ -197,14 +225,10 @@
             <div class="section3">
                 <div class="main2"><img src="images/bg_stroy_1.jpg" alt=""></div>
                 <div class="slide2">
-                    <ul>
-                        <li><img src="images/클린데이.jpg" alt=""></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="slider">
+                        <li><img src="images/클린데이.jpg" alt="사진1"></li>                        
+                        <li><img src="images/사랑나눔의 날.jpg" alt="사진2"></li>
+                        <li><img src="images/사랑나눔의 날.png" alt="사진3"></li>
                     </ul>
                 </div>
                 <div class="notice2"><img src="images/bg_report_1.jpg" alt=""></div>
