@@ -2,7 +2,7 @@ package a0705;
 
 import java.util.Calendar;
 
-public enum WeekEx {
+public class WeekEx {
     public static void main(String[] args) {
         //Week열거 따입 변수 선언
         Week today = null;
@@ -13,8 +13,10 @@ public enum WeekEx {
 
         //숫자를 열거 상수로 변환해서 변수에 대입
         switch(week){
-            case 1 : today = week.SUNDAY; break;
-            case 2 : today = week.MONDAY; break;
+            case 1 : today = week.SUNDAY;
+            break;
+            case 2 : today = week.MONDAY; 
+            break;
             case 3 : today = week.TUESDAY; break;
             case 4 : today = week.WEDNESDAY; break;
             case 5 : today = week.THURSDAY; break;

@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BankApplication",
+            "request": "launch",
+            "mainClass": "a0706.BankApplication",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Calendar02",
+            "request": "launch",
+            "mainClass": "a0706.Calendar02",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Calendar01",
+            "request": "launch",
+            "mainClass": "a0706.Calendar01",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Age",
+            "request": "launch",
+            "mainClass": "a0706.Age",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Days",
+            "request": "launch",
+            "mainClass": "a0706.Days",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "NumberString_1",
+            "request": "launch",
+            "mainClass": "a0706.NumberString_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_14_2",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_14_2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "NumberString",
+            "request": "launch",
+            "mainClass": "a0706.NumberString",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "PromotionExample",
+            "request": "launch",
+            "mainClass": "a0706.PromotionExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "SupersonicAirplaneExample",
+            "request": "launch",
+            "mainClass": "a0706.SupersonicAirplaneExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ComputerExample",
+            "request": "launch",
+            "mainClass": "a0706.ComputerExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "SmartPhoneExample2",
+            "request": "launch",
+            "mainClass": "a0706.SmartPhoneExample2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "SmartPhoneExample1",
+            "request": "launch",
+            "mainClass": "a0706.SmartPhoneExample1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "Ex42",
             "request": "launch",
             "mainClass": "a0705.Ex42",

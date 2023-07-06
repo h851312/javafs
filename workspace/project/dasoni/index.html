@@ -26,7 +26,7 @@
         }
 
         nav>div {
-            position: relative;
+           
             width: 1200px;
         }
         nav ul {
@@ -38,6 +38,7 @@
             display: none;
             
         }
+      
         
         nav ul li {
             font-size: 2rem;
@@ -166,11 +167,11 @@
                 $('.p2').css({ top: 150, opacity: 0 });
             }
                
-            $('nav > ul > li').mouseenter(function(){
+            $('nav > div> ul').mouseenter(function(){
                 $('.sub').stop().slideDown();
             });
-            $('nav > li').mouseleave(function(){
-                $('.sub>li').stop().slideUp();
+            $('nav > div > ul').mouseleave(function(){
+                $('.sub').stop().slideUp();
             });
 
         });
