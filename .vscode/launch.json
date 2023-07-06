@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ex42",
+            "request": "launch",
+            "mainClass": "a0705.Ex42",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex41",
+            "request": "launch",
+            "mainClass": "a0705.Ex41",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "WeekExample",
+            "request": "launch",
+            "mainClass": "a0705.WeekExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Enum",
+            "request": "launch",
+            "mainClass": "a0705.Enum",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "MonsterTest",
+            "request": "launch",
+            "mainClass": "a0705.MonsterTest",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "AccountTest1",
+            "request": "launch",
+            "mainClass": "a0705.AccountTest1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "FoodTest",
+            "request": "launch",
+            "mainClass": "a0705.FoodTest",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "UtilTest",
+            "request": "launch",
+            "mainClass": "a0705.UtilTest",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "AccountTest",
+            "request": "launch",
+            "mainClass": "a0705.AccountTest",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "StudentTest",
+            "request": "launch",
+            "mainClass": "a0705.StudentTest",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "AvengerTest",
+            "request": "launch",
+            "mainClass": "a0705.AvengerTest",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "HeroTest",
+            "request": "launch",
+            "mainClass": "a0705.HeroTest",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Dog",
+            "request": "launch",
+            "mainClass": "a0705.Dog",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex7_1",
+            "request": "launch",
+            "mainClass": "a0705.Ex7_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "Ex6_11_13_2",
             "request": "launch",
             "mainClass": "a0704.Ex6_11_13_2",

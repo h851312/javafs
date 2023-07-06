@@ -16,6 +16,46 @@
             font-size: 10px;
         }
 
+        header {
+            width: 1000px;
+            height: 111px;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            
+        }
+
+        nav>div {
+            position: relative;
+            width: 1200px;
+        }
+        nav ul {
+
+            display: inline-block;
+        }
+        
+        .sub {
+            display: none;
+            
+        }
+        
+        nav ul li {
+            font-size: 2rem;
+            width: 200px;
+            list-style: none;
+            text-align: center;
+            line-height: 50px;
+            transition: .3s;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+
+
+        }
+
         .slider {
             position: relative;
             height: 100vh;
@@ -52,16 +92,23 @@
             opacity: 0;
 
         }
-        p{ font-size: 1.8rem; font-weight: bold;
+
+        p {
+            font-size: 1.8rem;
+            font-weight: bold;
             position: relative;
             opacity: 0;
 
         }
-        .p1 {top: -100px;}
-        
+
+        .p1 {
+            top: -100px;
+        }
+
         .p2 {
-            top: 250px;}
-        
+            top: 250px;
+        }
+
 
         .bg1 span {
             position: absolute;
@@ -79,6 +126,8 @@
             top: 500px;
             left: 850px;
         }
+
+        
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
@@ -100,8 +149,8 @@
             function titMotion() {
                 // 슬라이드 전환 직후의 텍스트 모션
                 $('span').animate({ top: 450, opacity: 1 });
-                $('.p1').animate({top:-40, opacity:1 })
-                $('.p2').animate({top:100, opacity:1 })
+                $('.p1').animate({ top: -40, opacity: 1 })
+                $('.p2').animate({ top: 100, opacity: 1 })
             }
             function autoPager() {
                 // 페이저의 이미지 변경
@@ -113,15 +162,84 @@
 
                 // 슬라이드 전환 직전의 텍스트 모션
                 $('span').css({ top: 500, opacity: 0 });
-                $('.p1').css({ top :-10, opacity:0 });
-                $('.p2').css({ top :150, opacity:0});
+                $('.p1').css({ top: -10, opacity: 0 });
+                $('.p2').css({ top: 150, opacity: 0 });
             }
+               
+            $('nav > ul > li').mouseenter(function(){
+                $('.sub').stop().slideDown();
+            });
+            $('nav > li').mouseleave(function(){
+                $('.sub>li').stop().slideUp();
+            });
 
         });
+
     </script>
 </head>
 
 <body>
+    <header>
+        <div>
+            
+        </div>
+    </header>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">ABOUT다소니</a>
+                    <ul class="sub">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">마음산책</a></li>
+                        <li><a href="#">후기</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">상담진소개</a>
+                    <ul class="sub">
+                        <li><a href="#">대표/슈퍼바이저</a></li>
+                        <li><a href="#">다소니상담진</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">심리상담</a>
+                    <ul class="sub">
+                        <li><a href="#">성인심리상담</a></li>
+                        <li><a href="#">청소년/아동심리상담</a></li>
+                        <li><a href="#">부부상담</a></li>
+                        <li><a href="#">가족상담</a></li>
+                        <li><a href="#">심리상담 예약신청</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">심리검사</a>
+                    <ul class="sub">
+                        <li><a href="#">다소니전문심리검사</a></li>
+                        <li><a href="#">종합심리평가</a></li>
+                        <li><a href="#">신경심리평가</a></li>
+                        <li><a href="#">단일검사</a></li>
+                        <li><a href="#">심리검사 예약신청</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="">관계테라피</a>
+                    <ul class="sub">
+                        <li><a href="#">부부관계테라피</a></li>
+                        <li><a href="#">가족관계테라피</a></li>
+                        <li><a href="#">커플관계테라피</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
     <ul class="slider">
         <li class="bg1">
             <div>
@@ -148,6 +266,7 @@
             </div>
         </li>
     </ul>
+
 </body>
 
 </html>
