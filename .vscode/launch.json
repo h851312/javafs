@@ -6,6 +6,139 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ex3",
+            "request": "launch",
+            "mainClass": "a0707.ex11.Ex3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex2",
+            "request": "launch",
+            "mainClass": "a0707.ex11.Ex2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ex1",
+            "request": "launch",
+            "mainClass": "a0707.ex11.ex1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Example",
+            "request": "launch",
+            "mainClass": "a0707.ex_333_12.Example",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Arrays4_1",
+            "request": "launch",
+            "mainClass": "a0707.ex10.Arrays4_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Arrays3_1",
+            "request": "launch",
+            "mainClass": "a0707.ex10.Arrays3_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Arrays4",
+            "request": "launch",
+            "mainClass": "a0707.ex10.Arrays4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Arrays3",
+            "request": "launch",
+            "mainClass": "a0707.ex10.Arrays3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "AbstractMethodExample",
+            "request": "launch",
+            "mainClass": "a0707.ex9.AbstractMethodExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "PhoneExample",
+            "request": "launch",
+            "mainClass": "a0707.ex8.PhoneExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Main11",
+            "request": "launch",
+            "mainClass": "a0707.ani.Main11",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "SnoeTireExample",
+            "request": "launch",
+            "mainClass": "a0707.ex_333_8.SnoeTireExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ChildExample",
+            "request": "launch",
+            "mainClass": "a0707.ex_333_7.ChildExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "InstanceofExample",
+            "request": "launch",
+            "mainClass": "a0707.ex6.InstanceofExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "DriverExample",
+            "request": "launch",
+            "mainClass": "a0707.DriverExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Main10",
+            "request": "launch",
+            "mainClass": "a0707.Main10",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Car333",
+            "request": "launch",
+            "mainClass": "a0707.Car333",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Car33",
+            "request": "launch",
+            "mainClass": "a0707.Car33",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "CarExample",
+            "request": "launch",
+            "mainClass": "a0707.CarExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "BankApplication",
             "request": "launch",
             "mainClass": "a0706.BankApplication",
