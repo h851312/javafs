@@ -45,7 +45,11 @@
             position: absolute;
             top: 10px;
         }
-        .log>ul>li>a{color: black;}
+
+        .log>ul>li>a {
+            color: black;
+        }
+
         .nav {
             width: 980px;
             font-size: 2rem;
@@ -55,14 +59,27 @@
             position: relative;
             bottom: 20px;
         }
-        .nav>ul{display: inline-block;}
+
+        .nav>ul {
+            display: inline-block;
+        }
 
         li {
             display: inline;
-        } 
-        .company>li>a{color: black}
-        .custom>li>a{color:rgb(0, 124, 188)}
-        .custom>li>a>img{ width: 25px; height: 25px;}
+        }
+
+        .company>li>a {
+            color: black
+        }
+
+        .custom>li>a {
+            color: rgb(0, 124, 188);
+        }
+
+        .custom>li>a>img {
+            width: 25px;
+            height: 25px;
+        }
 
         #section1 {
             width: 1903px;
@@ -73,7 +90,7 @@
         #section1 ul {
             width: 1000px;
             height: 80px;
-            background-color: rgba(51, 51, 51, 0.5);
+            background-color: rgba(51, 51, 51, 0.7);
             position: absolute;
             left: 50%;
             top: 65%;
@@ -81,11 +98,38 @@
             color: #fff;
         }
 
-        button {
-            width: 120px;
+        .b>:nth-child(2) {
+            width: 110px;
             height: 40px;
+            margin: 0;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .b a img {
+            position: relative;
+            padding: 11px;
+            margin: 0;
+            background: white;
+            top: 13px;
+            right: 5px;
+
+        }
+
+        .b>:nth-child(4) {
+            position: relative;
+            width: 120px;
+            height: 39px;
+            margin: 0 10px;
             background: rgb(0, 124, 188);
             border: 1px solid rgb(0, 124, 188);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #section1 ul div {
+            display: inline-block;
         }
 
         #section1 ul li a {
@@ -93,8 +137,15 @@
             font-size: 1.5rem;
             font-weight: bold;
             line-height: 80px;
-            margin: 0 15px;
+            margin: 0 10px;
             padding: 0;
+
+        }
+
+        #section1 ul div li a img {
+            position: relative;
+            top: 10px;
+            padding: 0 10px;
 
         }
 
@@ -117,37 +168,168 @@
             width: 520px;
             height: 250px;
         }
-        
+
+        .slider {
+            position: absolute;
+            top: 50p;
+
+        }
+
 
         .slide1 {
             background: #0697E1;
         }
-        .slide1 >div {
+
+        .slide1>div {
             width: 200px;
             height: 133px;
-            margin:0 auto;
-        }
-        .slide2 >div {
-            width: 200px;
-            height: 133px;
-            margin:0 auto;
+            display: inline-block;
+
         }
 
-        .notice1 {
+        .slide2>div {
+            width: 200px;
+            height: 133px;
+            margin: 0 auto;
+        }
+
+        .slide1>div:nth-child(2) {
+            position: relative;
+            left: 100px;
+
+        }
+
+        .news li {
+            display: block;
+            padding: 15px 30px;
+        }
+
+        .news2 li {
+            display: block;
+            padding: 30px 30px;
+            color: black;
+        }
+
+        .slide2>div:nth-child(2) {
+            position: relative;
+            bottom: 150px;
+            left: 140px;
+
+        }
+
+        .notice1>ul {
             width: 240px;
             height: 250px;
+            padding: 20px 0;
             background: rgb(0, 124, 188);
+        }
+
+        .notice1>ul>li {
+            width: 240px;
+            height: 60px;
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .news,
+        .notice1>ul>li>a {
+            color: #fff;
+            padding: 0;
+            font-size: 1.8rem;
+            line-height: 20px;
+
+        }
+
+        .notice1>ul>li:nth-child(1)>a {
+            padding: 0 80px 0 0;
+        }
+
+        .main2 ul {
+            width: 240px;
+            height: 250px;
+            top: -60px;
+            background-image: url(images/bg_stroy_1.jpg);
+            ;
+        }
+
+        .main2 ul li a {
+            display: block;
+            color: black;
+            padding: 0 0 0 10px;
+        }
+
+        .main2>ul> :nth-child(1) {
+            position: relative;
+            font-size: 1.3rem;
+            font-weight: 100;
+            width: 50px;
+            height: 30px;
+            top: 30px;
+        }
+
+        .main2>ul> :nth-child(2) {
+            position: relative;
+            top: 50px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            width: 50px;
+            height: 30px;
+            line-height: 2.2rem;
+        }
+
+        .section4 {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .section4>ul {
+            display: inline-block;
+            padding: 30px 0;
+          
+        }
+
+        .section4>ul>li {
             display: block;
         }
-        .notice1 > ul > li > a {color: #fff;
-        font-size: 2rem;}
+
+        .section4>ul>li:nth-child(1) {
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .section4>ul :nth-child(2) {
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .section4>ul :nth-child(3) {
+            position: relative;
+            bottom: 40px;
+            left: 90px;
+        }
+
+        .section4>ul>li>a {
+            color: #333;
+        }
+        
+        .tel li:nth-child(2) a {
+            font-size: 2.5rem;
+        }
+
+        .bx-pager-link {
+            position: relative;
+            bottom: 170px;
+            left: 40px;
+        }
     </style>
-       <script>
-        $(function(){
+    <script>
+        $(function () {
             $(".slider").bxSlider();
 
         });
-        
+
 
     </script>
 </head>
@@ -181,61 +363,170 @@
                 </ul>
             </div>
         </nav>
-        <section>
-            <div class="section1">
-                <section id="section1">
-                    <ul>
+    </header>
+    <section>
+        <div class="section1">
+            <section id="section1">
+                <ul>
+                    <div class="a">
                         <li><a href="#"><img src="images/ico_quick01.png" alt="">요금조회</a></li>
                         <li><a href="#"><img src="images/ico_quick02.png" alt="">요금납부</a></li>
                         <li><a href="#"><img src="images/ico_quick03.png" alt="">전출입신청</a></li>
                         <li><a href="#"><img src="images/ico_quick04.png" alt="">신청서양식</a></li>
-                        <li><a href="#">간편요금조회</a></li>
-                        <li><a href="#">납부자번호입력</a></li>
-                        <button>협력업체</button>
-                    </ul>
-                </section>
-            </div>
-        </section>
-        <section>
-            <div class="section2">
-                <div class="main1"><img src="images/도시가스 관련 요금조회 납부_ 전출 전입 접수_ 자동이체신청 등 편.jpg" alt=""></div>
-                <div class="slide1">
-                    <div>
-                        <ul class="slider">
-                            <li><img src="images/천만장학회 공모전 _천만 아트 포 영_ 전시회 개막.jpg" alt="사진1"></li>
-                            <li><img src="images/삼천리_ _제57기 정기 주주총회_ 개최.jpg" alt="사진2"></li>
-                            <li><img src="images/_한국에서 가장 존경받는 기업_ 20년 연속 선정.jpg" alt="사진3"></li>
-                            <li><img src="images/미래 인재 육성의 든든한 후원자_ 천만장학회.jpg" alt="사진4"></li>
-                            <li><img src="images/삼천리_ _안전보건 실천 다짐대회_ 개최.jpg" alt="사진5"></li>
-                            <li><img src="images/어려운 이웃 향해 온정 담긴 손길 내미는 삼천리그룹.jpg" alt="사진6"></li>
-                        
-                        </ul>
                     </div>
-                </div>
-                <div class="notice1">
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">도시가스 요금단가 변동(2023년 7월 1일자)</a></li>
-                        <li><a href="#">도시가스 요금단가 변동(2023년 6월 1일자)</a></li>
+                    <div class="b">
+                        <li><a href="#">간편요금조회</a></li>
+                        <input type="search" id="user_search" placeholder="납부자번호 입력">
+                        <a href="#"><img src="images/ico_search01.gif" alt=""></a>
+                        <input type="submit" value="협력업체 >">
+                    </div>
+                </ul>
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="section2">
+            <div class="main1"><img src="images/도시가스 관련 요금조회 납부_ 전출 전입 접수_ 자동이체신청 등 편.jpg" alt=""></div>
+            <div class="slide1">
+                <div>
+                    <ul class="news1 news">
+                        <li>뉴스센터</li>
+                        <li>고지우 프로, 자신감 넘치는 경기 선보이며 KLGPGA 첫 우승 쾌거</li>
+                        <li>2023.07.02</li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="section3">
-                <div class="main2"><img src="images/bg_stroy_1.jpg" alt=""></div>
-                <div class="slide2">
+                <div>
                     <ul class="slider">
-                        <li><img src="images/클린데이.jpg" alt="사진1"></li>                        
+                        <li><img src="images/천만장학회 공모전 _천만 아트 포 영_ 전시회 개막.jpg" alt="사진1"></li>
+                        <li><img src="images/삼천리_ _제57기 정기 주주총회_ 개최.jpg" alt="사진2"></li>
+                        <li><img src="images/_한국에서 가장 존경받는 기업_ 20년 연속 선정.jpg" alt="사진3"></li>
+                        <li><img src="images/미래 인재 육성의 든든한 후원자_ 천만장학회.jpg" alt="사진4"></li>
+                        <li><img src="images/삼천리_ _안전보건 실천 다짐대회_ 개최.jpg" alt="사진5"></li>
+                        <li><img src="images/어려운 이웃 향해 온정 담긴 손길 내미는 삼천리그룹.jpg" alt="사진6"></li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="notice1">
+                <ul>
+                    <li><a href="#">공지사항</a><img src="images/공지사항 더보기.gif" alt="plus"></li>
+                    <li><a href="#">도시가스 요금단가 변동(2023년 7월 1일자)</a></li>
+                    <li><a href="#">도시가스 요금단가 변동(2023년 6월 1일자)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section3">
+            <div class="main2">
+                <ul>
+                    <li><a href="#">에너지에서 환경까지<br>미래를 창조하는 삼천리</a></li>
+                    <li><a href="#">삼천리<br>STORY</a></li>
+                </ul>
+
+            </div>
+            <div class="slide2">
+                <ul class="news2 news">
+                    <li>사회공헌 갤러리</li>
+                    <li>Clean Day (2023-04)</li>
+                    <li>2023.04.27</li>
+                </ul>
+                <div>
+                    <ul class="slider">
+                        <li><img src="images/클린데이.jpg" alt="사진1"></li>
                         <li><img src="images/사랑나눔의 날.jpg" alt="사진2"></li>
                         <li><img src="images/사랑나눔의 날.png" alt="사진3"></li>
                     </ul>
                 </div>
-                <div class="notice2"><img src="images/bg_report_1.jpg" alt=""></div>
             </div>
-        </section>
+            <div class="notice2"><img src="images/bg_report_1.jpg" alt=""></div>
+        </div>
+    </section>
+    <section>
+        <div class="section4">
 
-    </header>
+            <ul>
+                <li>
+                    <a href="#">고객의 소리</a>
+                </li>
+                <li>
+                    <a href="#">고객님의 궁금한<br>점을 남겨주세요</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/bg_etc_1_s.gif" alt=""></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">이용안내</a>
+                </li>
+                <li>
+                    <a href="#">도시가스 관련<br>안내사항입니다.</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/bg_etc_2_s.gif" alt=""></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">연결비용안내</a>
+                </li>
+                <li>
+                    <a href="#">가스렌지 연결<br>비용안내입니다.</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/bg_etc_3_s.gif" alt=""></a>
+                </li>
+            </ul>
+            <ul class="tel">
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+                <li>
+                    <a href="#">1544-3002</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/bg_etc_4_s.gif" alt=""></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">가스사고 신고접수</a>
+                </li>
+                <li>
+                    <a href="#">가스 신고를 접수<br>하실수 있습니다.</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/bg_etc_5_s.gif" alt=""></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">윤리 제보센터</a>
+                </li>
+                <li>
+                    <a href="#">부정 및 비리행위 등에<br>대한제보센터입니다.</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/bg_etc_6.jpg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 
 </body>
 
