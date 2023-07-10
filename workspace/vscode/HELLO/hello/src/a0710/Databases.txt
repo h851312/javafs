@@ -1,0 +1,107 @@
+Mysql 접속
+mysql -u -root -p    로그인
+
+mysql> quit     
+mysql> exit   - 로그아웃
+
+
+Database
+show databases;  데이터 목록표시
+CREATE DATABASE [DB명]; 데이터 베이스 생성
+DROP DATABASE [삭제할  DB명]; 데이터베이스 삭제
+USE [선택할 DB명];  데이터 베이스에 접근(선택)
+
+1.테이블 생성 [table명];
+CREATE TABLE [table명] (
+  [column1] [datatype] [option],
+  [column2] [datatype] [option],
+  [column3] [datatype] [option],
+  ...
+  PRIMARY KEY ([PK로 지정할 column명]),
+  FOREIGN KEY ([FK로 지정할 column명]) REFERENCES [참조할 table] ([참조할 PK명])
+);
+CREATE TABLE drinks(
+  id TNT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NOT NULL,
+  iamge_url VARCHAR(2000) NOT NULL,
+  description VARCHAR(500) NOT NULL,
+  is_new TINYINT,
+  category_id INT NOT NULL,
+  PRIMARY key (id)
+  FOREIGN KEY (category_id REFERENCES categories (id)
+);
+
+2.데이터 베이스 테이블의 구조
+데이터 베이스 테이블의 구조 보기
+desc 테이블명
+desc mem;
+
+3.1 필드 삭제 하기
+alter table mem drop post_num;
+
+3.2 필드 수정
+alter table mem change age phone  char(20);
+
+3.3 필드 데이터형 수정하기
+alter table mem modify phone int;
+
+3.4 데이터베이스 테이블 이름 관리
+이미 존재하는 DB 테이블 이름을 변경하는 명령
+
+alter table 수정할_테이블명 rename 새로운_테이블명;
+alter table mem  rename mem2;
+
+데이터베이스 테이블 삭제
+drop table 테이블명
+drop table mem2;
+
+create 
+
+
+
+전체 필드와 데이터 검색
+
+다음은 DB 테이블의 전체 필드와 데이터를 보여주는 명령 형식.s
+select * from 테이블명;
+select * from member;
+
+- 특정 필드의 전체 레코드 검색
+
+select 필드명1, 필드명2, 필드명3 .....from 테이블명
+
+member 테이블의 전체 레코드에서 name, telm address필드 데이터만 검색하는 명령.
+
+select name, tel, address from member;
+
+selsct name 필드명1, 필드명2...from 테이블명 where 조건
+
+member 테이블에서
+여성회원의 아이디, 이름 , 주소, 성별 검색
+
+select id, name, address, gender from member where gender = "w";
+
+
+문제 1) 50세 이상인 남성 회원의 이름, 전화번호, 성별, 나이 검색
+
+select name, tel, gender, age from member where age >= 50 and gender = "m";
+
+문제 2) 20대 회원의 이름, 성별, 주소, 나이 검색
+
+select name, gender, address, age from member where age >=20 and age<=29
+
+문제 3) 30대 또는 50대 남성회원의 이름, 전화번호, 나이, 성별 검색
+select name, tel, age, gender from member where((age>=30 and age<=39)or (age>=50 and age<=59)) and gender = "m";
+
+문제4)이름이 '안철영'인 회원의 일련번호, 이름, 전화번호, 주소, 우편번호, 나이, 성별 검색
+select num, name, tel, adderss, post)num, age gender from member where name = "안철영"; 
+
+특정 문자열이 포함된 레코드 검색
+'테이블명'이라는 Db 테이블에서 '검색필드'에 포함된 '문자열_수식' 조건을 만족하는 레코드의 필드명1, 필드명2, ... 를 검색하는 명령형식.
+select 필드명1, 필드명2,  ...from 테이블명 where 검색필드 like 문자열 수식;
+- 성이 박씨인 회원의 이름, 전화번호 검색
+- select name, tel, from where name like "박%';
+
+서울에 거주하는 회원의 일련번호, 이름, 주소, 성별, 검색
+은평구에 거주하는 회원의 모든 정보 검색
+ select num, id, name, gender, post_num, address, tel, age from member where address like "%은평%";
+select * from member where address like '%은평%';

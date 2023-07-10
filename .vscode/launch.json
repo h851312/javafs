@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "String6",
+            "request": "launch",
+            "mainClass": "a0710.String6",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String5",
+            "request": "launch",
+            "mainClass": "a0710.String5",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "RemoteControlExample",
+            "request": "launch",
+            "mainClass": "a0710.RemoteControlExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String4",
+            "request": "launch",
+            "mainClass": "a0710.String4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String3",
+            "request": "launch",
+            "mainClass": "a0710.String3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String1",
+            "request": "launch",
+            "mainClass": "a0710.String1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "String2",
+            "request": "launch",
+            "mainClass": "a0710.String2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Main1",
+            "request": "launch",
+            "mainClass": "a0710.Main1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample1",
+            "request": "launch",
+            "mainClass": "a0710.Sample1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample",
+            "request": "launch",
+            "mainClass": "a0710.Sample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "Ex3",
             "request": "launch",
             "mainClass": "a0707.ex11.Ex3",
