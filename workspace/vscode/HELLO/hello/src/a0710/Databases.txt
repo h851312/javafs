@@ -21,7 +21,7 @@ CREATE TABLE [table명] (
   FOREIGN KEY ([FK로 지정할 column명]) REFERENCES [참조할 table] ([참조할 PK명])
 );
 CREATE TABLE drinks(
-  id TNT NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL AUTO_INCREMENT,
   name VARCHAR(45) NOT NULL,
   iamge_url VARCHAR(2000) NOT NULL,
   description VARCHAR(500) NOT NULL,
@@ -105,3 +105,35 @@ select 필드명1, 필드명2,  ...from 테이블명 where 검색필드 like 문
 은평구에 거주하는 회원의 모든 정보 검색
  select num, id, name, gender, post_num, address, tel, age from member where address like "%은평%";
 select * from member where address like '%은평%';
+
+데이터의 검색과 관리
+-서울에 사는 회원을 나이순으로 오름차순 정렬한 뒤 이름, 나이, 주소, 전화번호, 성별 출력
+
+select name, age, address, tel, gender from member where address like '서울%' order by age; 
+
+-부산에 사는 회원을 나이순으로 내림차순 정렬한 뒤 이름, 나이, 주소, 전화번호 출력
+
+select name, age, address, tel from member where address like '부산%' order by age desc;
+
+레코드의 수정
+-'테이블명' 이라는 DB 테이블에서 조건식을 만족하는 레코드의 '필드명' 값을 '필드값'으로 변경하는 명령 형식.
+update 테이블명 set 필드명 = 필드값 where 조건식;
+
+-이름이 '고재진'인 레코드의 전화번호를 123-4567로 변경한 뒤 데이터 확인
+update member set tel='123-4567' where name='고재진';
+- 이름이 '정한나'인 회원의 나이를 확인하고 값을 37로 변경
+ select name, age from member where name='정한나';
+ update member set age='37' where name='정한나';
+ select name, age from member where name='정한나';
+
+레코드 삭제
+'테이블명' 이라는 DB테이블에서 조건식을 만족하는 레코드를 삭제하는 명령형식.
+delete from 테이블명 where 조건식;
+
+-이름이 ' 김수련'인 레코드를 삭제한뒤 확인
+>delete from member where name='김수련';
+>select *from member where name like '김%';
+
+40대 회원의 레코드를 삭제한뒤 35~53세 회원의 이름, 나이 , 성별을 나이순으로 출력하여 확인
+
+

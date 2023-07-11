@@ -6,6 +6,146 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Read02",
+            "request": "launch",
+            "mainClass": "a0711.Read02",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Write04_1",
+            "request": "launch",
+            "mainClass": "a0711.Write04_1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Write02",
+            "request": "launch",
+            "mainClass": "a0711.Write02",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Write01",
+            "request": "launch",
+            "mainClass": "a0711.Write01",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample06",
+            "request": "launch",
+            "mainClass": "a0711.Sample06",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample03",
+            "request": "launch",
+            "mainClass": "a0711.Sample03",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample02",
+            "request": "launch",
+            "mainClass": "a0711.Sample02",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample01",
+            "request": "launch",
+            "mainClass": "a0711.Sample01",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "PatternExample",
+            "request": "launch",
+            "mainClass": "a0711.PatternExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "SimpleDateFormatExample",
+            "request": "launch",
+            "mainClass": "a0711.SimpleDateFormatExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "CalendarExample",
+            "request": "launch",
+            "mainClass": "a0711.CalendarExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "DateExample",
+            "request": "launch",
+            "mainClass": "a0711.DateExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "RandomExample",
+            "request": "launch",
+            "mainClass": "a0711.RandomExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "MathExample",
+            "request": "launch",
+            "mainClass": "a0711.MathExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "StringBuffer",
+            "request": "launch",
+            "mainClass": "a0711.StringBuffer",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "StringBuffer02",
+            "request": "launch",
+            "mainClass": "a0711.StringBuffer02",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ValueCompareExample",
+            "request": "launch",
+            "mainClass": "a0711.ValueCompareExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "BoxingUnBoxingExample",
+            "request": "launch",
+            "mainClass": "a0711.BoxingUnBoxingExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Wrapper01",
+            "request": "launch",
+            "mainClass": "a0711.Wrapper01",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "StringBuilderExample",
+            "request": "launch",
+            "mainClass": "a0711.StringBuilderExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "String6",
             "request": "launch",
             "mainClass": "a0710.String6",
