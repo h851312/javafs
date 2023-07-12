@@ -56,18 +56,22 @@
         }
         .log input {
             width: 100px;
-            height: 20px;
+            height: 25px;
             background: #99999936;
-            border: 1px solid #99999936;
+            border: 1px solid #99999900;
+            margin: 0 0 0 30px;
         }
-        .log > ul > a > img {
-            color: #000;
+        .log > ul > a {
+            position: relative;
+            padding: 7px 14px 2px 4px;
+            background: #99999936;
+            top: 3px;
+            right: 5px;
         }
 
         .nav {
             width: 980px;
-            font-size: 2rem;
-            font-weight: bold;
+            font-size: 1.8rem;
             text-align: end;
             display: inline-block;
             position: relative;
@@ -77,6 +81,7 @@
             content: '|';
             margin: 0 5px 0 7px;
             color: black;
+            vertical-align: 2px;
         }
 
         .nav>ul {
@@ -88,24 +93,48 @@
         }
 
         .company>li>a {
-            color: black
+            color: black;
+            padding: 0 0 0 15px;
         }
-
+        
         .custom>li>a {
             color: rgb(0, 124, 188);
+            padding: 0 15px 0 0;
+        }
+        .custom>li:nth-child(4) a {
+            padding: 0;
+        }
+        .custom>li:nth-child(5) a {
+            padding: 0;
         }
 
         .custom>li>a>img {
             width: 25px;
             height: 25px;
+            vertical-align: bottom;
         }
-
+        section {
+            overflow: hidden;
+        }
         #section1 {
             width: 1903px;
             height: 600px;
             background-image: url(images/bg_visual_1.jpg);
         }
-
+        #section1 > ul > div:nth-child(1) li{
+            position: absolute;
+            font-size: 4rem;
+            font-weight: bold;
+            color: black;
+            bottom: 400px;
+            left: 50px;
+        }
+        #section1 > ul > div:nth-child(2) li{
+            position: absolute;
+            bottom: 300px;
+            left: 50px;
+        }
+        
         #section1 ul {
             width: 1000px;
             height: 80px;
@@ -117,9 +146,10 @@
             color: #fff;
         }
         .a::after {
+            vertical-align: -5px;
             content: '|';
             font-size: 40px;
-            margin: 0 0px 0 2px;
+            margin: 0 0 0 2px;
             color: #999;
             font-weight: 100;
         }
@@ -144,12 +174,12 @@
 
         .b>:nth-child(4) {
             position: relative;
-            width: 120px;
+            width: 115px;
             height: 39px;
             margin: 0 10px;
             background: rgb(0, 124, 188);
             border: 1px solid rgb(0, 124, 188);
-            color: white;
+            color: #fff;
             font-size: 16px;
             font-weight: bold;
         }
@@ -186,10 +216,15 @@
         .section3 {
             background: #EFF3F4;
         }
+        .section2 {
+            position: relative;
+            left: 380px;
+        }
 
         .main1 {
             width: 240px;
             height: 250px;
+            
         }
 
         .slide1,
@@ -230,7 +265,7 @@
 
         .news li {
             display: block;
-            padding: 15px 30px;
+            padding: 30px 30px 0px;
         }
 
         .news2 li {
@@ -247,7 +282,7 @@
         }
 
         .notice1>ul {
-            width: 100;
+            width: 1000px;
             height: 250px;
             padding: 20px 0;
             background: rgb(0, 124, 188);
@@ -306,7 +341,17 @@
             height: 30px;
             line-height: 2.2rem;
         }
-
+        
+        .notice2 :nth-child(2) a{
+            position: relative;
+            bottom: 190px;
+            right: 40px;
+        }
+        .notice2 :nth-child(3) a{
+            position: relative;
+            bottom: 190px;
+            right: 40px;
+        }
         .section4 {
             position: absolute;
             left: 50%;
@@ -350,8 +395,17 @@
             color: #333;
         }
 
-        .tel li:nth-child(2) a {
-            font-size: 2.5rem;
+        .tel li a{
+            position: relative;
+            bottom: 33px;
+            padding: 0 40px 0 10px;
+        }
+        .tel li:nth-child(2) {
+            position: relative;
+            height: 30px;
+            background: url(images/1544-3002.gif) no-repeat;
+            bottom: 28px;
+            left: 20px;
         }
 
         .bx-pager-link {
@@ -481,6 +535,8 @@
         <div class="section1">
             <section id="section1">
                 <ul>
+                    <div><li>신뢰와 나눔 속에<br> 사랑 받는 기업으로</li></div>
+                    <div><li><img src="images/신뢰와 나눔속에 사랑받는 기업으로 선택.png" alt=""></li></div>
                     <div class="a">
                         <li><a href="#"><img src="images/ico_quick01.png" alt="">요금조회</a></li>
                         <li><a href="#"><img src="images/ico_quick02.png" alt="">요금납부</a></li>
@@ -553,7 +609,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="notice2"><img src="images/bg_report_1.jpg" alt=""></div>
+            <div class="notice2">
+                <li><a href="#"><img src="images/bg_report_1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/bg_report_1.gif" alt=""></a></li>
+                <li><a href="#"><img src="images/자동롤링 시작.gif" alt=""></a></li>
+            </div>
         </div>
     </section>
     <section>
@@ -595,20 +655,20 @@
             </ul>
             <ul>
                 <li>
-                    <a href="#"><img src="images/bg_etc_3_s.gif" alt=""></a>
+                    <a href="#"><img src="images/bg_etc_5_s.gif" alt=""></a>
                 </li>
             </ul>
             <ul class="tel">
                 <li>
                     <a href="#">고객센터</a>
                 </li>
+                
                 <li>
-                    <a href="#">1544-3002</a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="#"><img src="images/bg_etc_4_s.gif" alt=""></a>
+                    <a href="#"><img src="images/bg_etc_3_s.gif" alt=""></a>
                 </li>
             </ul>
             <ul>
@@ -621,7 +681,7 @@
             </ul>
             <ul>
                 <li>
-                    <a href="#"><img src="images/bg_etc_5_s.gif" alt=""></a>
+                    <a href="#"><img src="images/bg_etc_4_s.gif" alt=""></a>
                 </li>
             </ul>
             <ul>
