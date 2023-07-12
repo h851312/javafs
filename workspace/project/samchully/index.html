@@ -45,9 +45,23 @@
             position: absolute;
             top: 10px;
         }
+         .log ul li:not(:last-of-type)::after {
+            content: '|';
+            margin: 0 5px 0 7px;
+            color: black;
+        }
 
         .log>ul>li>a {
             color: black;
+        }
+        .log input {
+            width: 100px;
+            height: 20px;
+            background: #99999936;
+            border: 1px solid #99999936;
+        }
+        .log > ul > a > img {
+            color: #000;
         }
 
         .nav {
@@ -58,6 +72,11 @@
             display: inline-block;
             position: relative;
             bottom: 20px;
+        }
+        .nav ul:not(:last-of-type)::after {
+            content: '|';
+            margin: 0 5px 0 7px;
+            color: black;
         }
 
         .nav>ul {
@@ -93,9 +112,16 @@
             background-color: rgba(51, 51, 51, 0.7);
             position: absolute;
             left: 50%;
-            top: 65%;
+            top: 63%;
             transform: translate(-50%, 0);
             color: #fff;
+        }
+        .a::after {
+            content: '|';
+            font-size: 40px;
+            margin: 0 0px 0 2px;
+            color: #999;
+            font-weight: 100;
         }
 
         .b>:nth-child(2) {
@@ -221,7 +247,7 @@
         }
 
         .notice1>ul {
-            width: 240px;
+            width: 100;
             height: 250px;
             padding: 20px 0;
             background: rgb(0, 124, 188);
@@ -318,6 +344,7 @@
             bottom: 40px;
             left: 90px;
         }
+        
 
         .section4>ul>li>a {
             color: #333;
@@ -340,7 +367,7 @@
             position: relative;
             margin: 0 auto;
         }
-        footer div {
+        footer div:nth-child(1)  {
             background: url(images/bg_footer_1.gif) no-repeat;
             position: relative;
             width: 1000px;
@@ -352,11 +379,16 @@
         footer div a{
             position: relative;
             display: inline-block;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             left: 150px;
             color: #A0AAB0;
             padding: 0 10px 30px 0;
-            
+           
+        }
+        footer div a:not(:last-of-type)::after {
+            content: ' |';
+            margin: 0 0 0 5px;
+            color: #A0AAB0;
         }
         footer div :nth-child(1) {
             color: #fff;
@@ -378,14 +410,25 @@
         }
         #fs {
             position: absolute;
-            left: 760px;
-            top: -90px;
-            width: 180px;
+            left: 1200px;
+            bottom: 90px;
+            width: 195px;
             height: 30px;
             padding: 5px;
             border: #D9D9D9;
             color: #444444;
             font-size: 1.4rem;
+        }
+        .btn {
+            position: absolute;
+            background-color:rgb(134, 138, 139);
+            width: 50px;
+            height: 30px;
+            left: 1400px;
+            bottom: 90px;
+            border: 1px solid rgb(134, 138, 139);
+            cursor: pointer;
+
         }
     
         
@@ -412,6 +455,8 @@
                     <li><a href="#">회원가입</a></li>
                     <li><a href="#">사이트맵</a></li>
                     <li><a href="#">English</a></li>
+                    <input type="search" id="user_search" placeholder="검색어 입력">
+                    <a href="#"><img src="images/검색.gif" alt=""></a>
                 </ul>
             </div>
             <div class="nav">
@@ -622,6 +667,7 @@
                 <option value="8">(주)삼천리모터스</option>
                 <option value="9">천만장학회</option>
             </select>
+            <button class=" btn">확인</button>
         </div>
 
 
