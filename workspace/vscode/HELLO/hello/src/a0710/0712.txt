@@ -1,0 +1,44 @@
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('원더걸스', '2007-09-12', 101); 
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('소녀시대', '2009-0603', 102);
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('카라', '2009-07-30', 103);
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('브라운아이드걸스', '2008-01-17', 104);
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('다비치', '2009-02-27', 105);
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('f(x)', '2011-04-20, 108);
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('시크릿', '2011-01-06', 109);
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('레인보우', '2010-08-12', 110):
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('에프터스쿨', ' 2009-11-25');
+INSERT INTO girl_group (name, debut, hit_song_id) VALUES ('포미닛', '2009-08-28'
+
+
+CREATE TABLE orders (
+id INT PRIMARY KEY,
+user_id INT,
+product VARCHAR(50),
+price decimal(10,2),
+FOREIGN KEY(user_id) REFERENCES users(id)
+);
+
+
+	insert into users (id, name, email) VALUES
+(1, 'John Smith', 'john@exanple.com'),
+(2, 'Jane Doe', 'jane@example.com');
+
+INSERT INTO orders (id, user_id, product, price) VALUES
+(1, 1, 'Product A', 10.99),
+(2, 1, 'Product B', 19.99),
+(3, 2, 'Product C', 5.99);
+
+u.name과 o.product, o.price를 inner join 해서 보여주시오.
+
+이너조인
+select u.name, o.product, o.price
+from users u
+left join orders o ON u.id = o.user_id;
+  
+
+
+레프트 조인
+select u.name, o.product, o.price
+from users u
+left join orders o ON u.id = o.user_id;
+

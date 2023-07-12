@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainClass",
+            "request": "launch",
+            "mainClass": "a0711.arrayList.MainClass",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListExample",
+            "request": "launch",
+            "mainClass": "a0712.ex3.ArrayListExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "GenelicExample",
+            "request": "launch",
+            "mainClass": "a0712.ex2.GenelicExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "GenericExample",
+            "request": "launch",
+            "mainClass": "a0712.ex1.GenericExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "GenericExample",
+            "request": "launch",
+            "mainClass": "a0712.GenericExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "Read02",
             "request": "launch",
             "mainClass": "a0711.Read02",
