@@ -1,0 +1,12 @@
+687page
+1. 4
+2. 3
+3. 4
+4. 3
+5. Array<Board> list = new ArrayList<>();
+   ArrayList<Board> list1 = new ArrayList<board>();
+6. Map<String, Integer> listmap = new HashMap<String, Integer>();
+
+11. 4
+12. 3
+13. 4

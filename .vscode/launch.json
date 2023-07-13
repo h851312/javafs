@@ -6,6 +6,125 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxExample",
+            "request": "launch",
+            "mainClass": "a0713.Ex687.MaxExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "a0713.Ex687.ListExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "a0713.Ex1.ListExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "HashtableExample",
+            "request": "launch",
+            "mainClass": "a0713.HashtableExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "hashMapExample",
+            "request": "launch",
+            "mainClass": "a0713.hashMapExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "QueueExample",
+            "request": "launch",
+            "mainClass": "a0713.QueueExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "StackExample",
+            "request": "launch",
+            "mainClass": "a0713.StackExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ComparableExample",
+            "request": "launch",
+            "mainClass": "a0713.ComparableExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "TreeMapExample",
+            "request": "launch",
+            "mainClass": "a0713.TreeMapExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "PropertiesExample",
+            "request": "launch",
+            "mainClass": "a0713.PropertiesExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Map1",
+            "request": "launch",
+            "mainClass": "a0713.Map1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "HashSetExample2",
+            "request": "launch",
+            "mainClass": "a0713.HashSetExample2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "HashSetExample1",
+            "request": "launch",
+            "mainClass": "a0713.HashSetExample1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "HashSetExample",
+            "request": "launch",
+            "mainClass": "a0713.HashSetExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "LinkedListExample",
+            "request": "launch",
+            "mainClass": "a0713.LinkedListExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "VectorExample1",
+            "request": "launch",
+            "mainClass": "a0713.VectorExample1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "VectorExample",
+            "request": "launch",
+            "mainClass": "a0713.VectorExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "MainClass",
             "request": "launch",
             "mainClass": "a0711.arrayList.MainClass",
