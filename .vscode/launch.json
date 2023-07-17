@@ -6,6 +6,174 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Stream2",
+            "request": "launch",
+            "mainClass": "a0717.Function0717.Stream2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample23",
+            "request": "launch",
+            "mainClass": "a0717.Sample23",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Stream1",
+            "request": "launch",
+            "mainClass": "a0717.Function0717.Stream1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Function3",
+            "request": "launch",
+            "mainClass": "a0717.Function0717.Function3",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Function4",
+            "request": "launch",
+            "mainClass": "a0717.Function0717.Function4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Function1",
+            "request": "launch",
+            "mainClass": "a0717.Function0717.Function1",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ThreadExample",
+            "request": "launch",
+            "mainClass": "a0717.Ex633p.ThreadExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample26",
+            "request": "launch",
+            "mainClass": "a0717.Sample26",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample24",
+            "request": "launch",
+            "mainClass": "a0717.Sample24",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex06",
+            "request": "launch",
+            "mainClass": "a0717.Ex483p.Ex06",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "AccountExample",
+            "request": "launch",
+            "mainClass": "a0717.Ex1.AccountExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "AccountExample",
+            "request": "launch",
+            "mainClass": "a0717.AccountExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample22",
+            "request": "launch",
+            "mainClass": "a0717.Sample22",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample21",
+            "request": "launch",
+            "mainClass": "a0717.Sample21",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Sample20",
+            "request": "launch",
+            "mainClass": "a0717.Sample20",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandlingExample6",
+            "request": "launch",
+            "mainClass": "a0717.Ex466p.ExceptionHandlingExample6",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandlingExample5",
+            "request": "launch",
+            "mainClass": "a0717.Ex466p.ExceptionHandlingExample5",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandlingExample4",
+            "request": "launch",
+            "mainClass": "a0717.Ex466p.ExceptionHandlingExample4",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandlingExample",
+            "request": "launch",
+            "mainClass": "a0717.Ex466p.ExceptionHandlingExample",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandlingExample2",
+            "request": "launch",
+            "mainClass": "a0717.Ex466p.ExceptionHandlingExample2",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Ex05",
+            "request": "launch",
+            "mainClass": "a0717.ex717p.Ex05",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Example",
+            "request": "launch",
+            "mainClass": "a0717.ex717p.Ex07.Example",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Example",
+            "request": "launch",
+            "mainClass": "a0717.ex717p.Ex06java.Example",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
+            "name": "Tran",
+            "request": "launch",
+            "mainClass": "a0717.Tran",
+            "projectName": "javafs_c8ed48f6"
+        },
+        {
+            "type": "java",
             "name": "St15",
             "request": "launch",
             "mainClass": "a0714.Ex10.St15",
