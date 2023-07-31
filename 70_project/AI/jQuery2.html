@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Mall Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 1rem;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .burger {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none; /* Hide the burger menu on larger screens */
+    }
+
+    .content {
+      padding: 1rem;
+    }
+
+    /* Media query for mobile devices */
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        display: none; /* Hide the menu on smaller screens */
+      }
+
+      .nav-links.active {
+        display: flex; /* Show the menu when active */
+      }
+
+      .nav-links li {
+        margin: 0;
+      }
+
+      .burger {
+        display: block; /* Show the burger menu icon on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Your Logo</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- Add more menu items here -->
+      </ul>
+      <div class="burger">&#9776;</div> <!-- Unicode hamburger icon -->
+    </nav>
+  </header>
+
+  <div class="content">
+    <!-- Your shopping mall content goes here -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-latest.min.js" integrity="sha384-BcDE10VdKRWFLzJlR1+2ZlN6MlRoNIXo92L+dyA3g5BSp8XB8p8h2uHau1cJ6BIM" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      // 햄버거 아이콘 클릭 시 네비게이션 메뉴 토글
+      $('.burger').click(function() {
+        $('.nav-links').toggleClass('active');
+      });
+    });
+  </script>
+</body>
+</html>
